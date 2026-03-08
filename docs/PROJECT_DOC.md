@@ -1,11 +1,18 @@
 # BioPlus 项目技术文档
 
+## 项目状态
+
+**上线地址**: https://sulfolobus.github.io/bioplus/
+**GitHub 仓库**: https://github.com/sulfolobus/bioplus
+
+---
+
 ## 一、项目概述
 
 **项目名称**: BioPlus（生-plus）
 **项目定位**: 生命科学实践应用科普平台
 **技术栈**: MkDocs + Material 主题
-**托管平台**: GitHub Pages / Vercel（免费）
+**托管平台**: GitHub Pages（已部署）
 
 ---
 
@@ -101,6 +108,12 @@ bioplus/
 ### 安装依赖
 
 ```bash
+# 创建虚拟环境（推荐）
+python3 -m venv .venv
+
+# 激活虚拟环境
+source .venv/bin/activate
+
 # 安装 MkDocs 和主题
 pip install mkdocs mkdocs-material
 
@@ -113,11 +126,14 @@ pip install mkdocs-minify-plugin
 ```bash
 cd /Users/wy/Documents/bioplus
 
+# 激活虚拟环境
+source .venv/bin/activate
+
 # 启动本地服务器
 python3 -m mkdocs serve
 
 # 或指定端口
-python3 -m mkdocs serve --dev-addr 127.0.0.1:8001
+python3 -m mkdocs serve --dev-addr 127.0.0.1:8000
 ```
 
 ### 访问预览
@@ -126,86 +142,40 @@ python3 -m mkdocs serve --dev-addr 127.0.0.1:8001
 
 ---
 
-## 六、上线部署（免费）
+## 六、上线部署（已自动化）
 
-### 方案一：GitHub Pages（推荐）
+### GitHub Pages 部署（当前方案）
 
-**步骤**：
+项目已配置 GitHub Actions 自动部署，每次推送到 main 分支会自动构建并部署。
 
-1. **创建 GitHub 仓库**
-   - 访问 https://github.com/new
-   - 仓库名：`bioplus`
-   - 选择 Public
+**部署流程**：
 
-2. **推送代码到 GitHub**
+1. 推送代码到 GitHub
+2. GitHub Actions 自动构建 MkDocs
+3. 自动部署到 GitHub Pages
 
 ```bash
-cd /Users/wy/Documents/bioplus
-
-# 初始化 Git（如果未初始化）
-git init
-
-# 添加所有文件
+# 推送更新
 git add .
-
-# 提交代码
-git commit -m "Initial commit: BioPlus 网站"
-
-# 添加远程仓库
-git remote add origin https://github.com/yourusername/bioplus.git
-
-# 推送代码
-git push -u origin main
+git commit -m "更新内容"
+git push
 ```
 
-3. **启用 GitHub Pages**
+**访问网站**：
 
-   - 进入仓库设置 → Pages
-   - Source 选择 "Deploy from a branch"
-   - Branch 选择 "gh-pages"，文件夹选择 "/(root)"
-   - 点击 Save
-
-4. **访问网站**
-
-   - URL: `https://yourusername.github.io/bioplus/`
+- URL: https://sulfolobus.github.io/bioplus/
 
 ---
 
-### 方案二：Vercel 部署
-
-**步骤**：
-
-1. **安装 Vercel CLI**
-
-```bash
-npm install -g vercel
-```
-
-2. **部署**
-
-```bash
-cd /Users/wy/Documents/bioplus
-vercel
-```
-
-3. **按照提示操作**
-
-   - 首次需要登录 Vercel 账号
-   - 默认配置即可
-   - 部署完成后获得 URL
-
----
-
-### 方案三：绑定自定义域名（可选）
+### 绑定自定义域名（可选）
 
 1. 购买域名（如阿里云、腾讯云）
-2. 在托管平台添加域名
+2. 在 GitHub 仓库设置中添加域名
 3. 配置 DNS 解析
 
-| 托管平台 | DNS 类型 | 值 |
-|----------|---------|-----|
-| GitHub Pages | CNAME | yourusername.github.io |
-| Vercel | ALIAS | cname.vercel-dns.com |
+| DNS 类型 | 值 |
+|----------|-----|
+| CNAME | sulfolobus.github.io |
 
 ---
 
@@ -296,8 +266,8 @@ python3 -m mkdocs --help
 
 - MkDocs 文档：https://www.mkdocs.org/
 - Material 主题：https://squidfunk.github.io/mkdocs-material/
-- GitHub：https://github.com/
-- Vercel：https://vercel.com/
+- GitHub：https://github.com/sulfolobus/bioplus
+- GitHub Actions：https://docs.github.com/en/actions
 
 ---
 
