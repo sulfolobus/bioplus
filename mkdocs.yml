@@ -91,6 +91,17 @@ nav:
           - 生物技术/index.md
           - 生物技术/合成生物学.md
           - 生物技术/细胞治疗.md
+      - 神经-退化疾病:
+          - 神经退化疾病/index.md
+          - 神经退化疾病/阿尔茨海默症.md
+          - 神经退化疾病/健忘症.md
+      - 心血管疾病:
+          - 心血管疾病/index.md
+          - 心血管疾病/高血压.md
+      - 感官功能障碍:
+          - 感官功能障碍/index.md
+          - 感官功能障碍/失明治疗.md
+          - 感官功能障碍/脑机接口.md
   - 研究组: research-groups/index.md
   - 成果转化: achievements/index.md
   - 科普文章: 科普文章/index.md
