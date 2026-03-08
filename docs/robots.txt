@@ -1,0 +1,25 @@
+# Robots.txt for BioPlus
+# https://www.bioplus.com
+
+User-agent: *
+Allow: /
+
+# Disallow specific paths (if needed)
+# Disallow: /private/
+# Disallow: /admin/
+
+# Sitemap
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Block common scrapers (optional - these are not official user-agents)
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

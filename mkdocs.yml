@@ -1,0 +1,90 @@
+site_name: BioPlus - 生命科学实践应用平台
+site_description: 聚焦生命科学实践应用领域，连接科研问题、研究组与研究成果
+site_author: BioPlus Team
+site_url: https://bioplus.example.com
+
+repo_url: https://github.com/yourusername/bioplus
+repo_name: yourusername/bioplus
+
+copyright: Copyright &copy; 2026 BioPlus
+
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: teal
+    accent: teal
+  features:
+    - navigation.instant
+
+plugins:
+  - search:
+      lang: zh
+  - minify:
+      minify_html: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername/bioplus
+  scripts:
+    - assets/anti-copy.js
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - 首页: index.md
+  - 关于我们: about.md
+  - 研究领域:
+      - 基因编辑应用:
+          - 基因编辑应用/index.md
+          - 基因编辑应用/CRISPR临床.md
+          - 基因编辑应用/基因治疗.md
+      - 医学诊断:
+          - 医学诊断/index.md
+          - 医学诊断/液体活检.md
+          - 医学诊断/AI诊断.md
+      - 药物研发:
+          - 药物研发/index.md
+          - 药物研发/抗体药物.md
+          - 药物研发/AI制药.md
+      - 生物技术:
+          - 生物技术/index.md
+          - 生物技术/合成生物学.md
+          - 生物技术/细胞治疗.md
+  - 研究组: research-groups/index.md
+  - 成果转化: achievements/index.md
+  - 科普文章: 科普文章/index.md
