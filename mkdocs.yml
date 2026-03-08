@@ -1,5 +1,5 @@
-site_name: BioPlus - 生命科学实践应用平台
-site_description: 聚焦生命科学实践应用领域，连接科研问题、研究组与研究成果
+site_name: BioPlus - Life Science Platform
+site_description: A popular science platform focusing on practical applications of life sciences, connecting research problems, teams, and achievements
 site_author: BioPlus Team
 site_url: https://sulfolobus.github.io/bioplus
 
@@ -11,17 +11,22 @@ copyright: Copyright &copy; 2026 BioPlus
 theme:
   name: material
   language: zh
+  languages:
+    zh: Chinese
+    en: English
   palette:
     primary: teal
     accent: teal
   features:
     - navigation.instant
+    - navigation.tabs
     - search.suggest
     - search.highlight
+    - search.langauge
 
 plugins:
   - search:
-      lang: zh
+      lang: en
       prebuild_index: true
   - minify:
       minify_html: true
@@ -72,36 +77,36 @@ markdown_extensions:
       custom_checkbox: true
 
 nav:
-  - 首页: index.md
-  - 关于我们: about.md
-  - 研究领域:
-      - 基因编辑应用:
-          - 基因编辑应用/index.md
-          - 基因编辑应用/CRISPR临床.md
-          - 基因编辑应用/基因治疗.md
-      - 医学诊断:
-          - 医学诊断/index.md
-          - 医学诊断/液体活检.md
-          - 医学诊断/AI诊断.md
-      - 药物研发:
-          - 药物研发/index.md
-          - 药物研发/抗体药物.md
-          - 药物研发/AI制药.md
-      - 生物技术:
-          - 生物技术/index.md
-          - 生物技术/合成生物学.md
-          - 生物技术/细胞治疗.md
-      - 神经-退化疾病:
-          - 神经退化疾病/index.md
-          - 神经退化疾病/阿尔茨海默症.md
-          - 神经退化疾病/健忘症.md
-      - 心血管疾病:
-          - 心血管疾病/index.md
-          - 心血管疾病/高血压.md
-      - 感官功能障碍:
-          - 感官功能障碍/index.md
-          - 感官功能障碍/失明治疗.md
-          - 感官功能障碍/脑机接口.md
-  - 研究组: research-groups/index.md
-  - 成果转化: achievements/index.md
-  - 科普文章: 科普文章/index.md
+  - Home: index.md
+  - About: about.md
+  - Research Areas:
+      - Gene Editing:
+          - gene-editing/index.md
+          - gene-editing/CRISPR-clinical.md
+          - gene-editing/gene-therapy.md
+      - Medical Diagnosis:
+          - medical-diagnosis/index.md
+          - medical-diagnosis/liquid-biopsy.md
+          - medical-diagnosis/AI-diagnosis.md
+      - Drug Development:
+          - drug-development/index.md
+          - drug-development/antibody-drugs.md
+          - drug-development/AI-pharmaceuticals.md
+      - Biotechnology:
+          - biotechnology/index.md
+          - biotechnology/synthetic-biology.md
+          - biotechnology/cell-therapy.md
+      - Neurodegenerative Diseases:
+          - neurodegenerative-diseases/index.md
+          - neurodegenerative-diseases/alzheimer.md
+          - neurodegenerative-diseases/amnesia.md
+      - Cardiovascular Diseases:
+          - cardiovascular-diseases/index.md
+          - cardiovascular-diseases/hypertension.md
+      - Sensory Dysfunction:
+          - sensory-dysfunction/index.md
+          - sensory-dysfunction/blindness-treatment.md
+          - sensory-dysfunction/brain-machine-interface.md
+  - Research Groups: research-groups/index.md
+  - Achievements: achievements/index.md
+  - Popular Science: popular-science/index.md
