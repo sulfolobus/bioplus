@@ -1,10 +1,10 @@
 site_name: BioPlus - 生命科学实践应用平台
 site_description: 聚焦生命科学实践应用领域，连接科研问题、研究组与研究成果
 site_author: BioPlus Team
-site_url: https://bioplus.example.com
+site_url: https://sulfolobus.github.io/bioplus
 
-repo_url: https://github.com/yourusername/bioplus
-repo_name: yourusername/bioplus
+repo_url: https://github.com/sulfolobus/bioplus
+repo_name: sulfolobus/bioplus
 
 copyright: Copyright &copy; 2026 BioPlus
 
@@ -16,17 +16,23 @@ theme:
     accent: teal
   features:
     - navigation.instant
+    - search.suggest
+    - search.highlight
 
 plugins:
   - search:
       lang: zh
+      prebuild_index: true
   - minify:
       minify_html: true
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername/bioplus
+      link: https://github.com/sulfolobus/bioplus
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
   scripts:
     - assets/anti-copy.js
 

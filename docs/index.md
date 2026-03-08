@@ -1,6 +1,6 @@
 # BioPlus - 生命科学实践应用平台
 
-![BioPlus](assets/logo.png)
+![BioPlus](assets/logo.svg)
 
 ## 欢迎来到 BioPlus
 
