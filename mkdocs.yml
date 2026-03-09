@@ -79,6 +79,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - About: about.md
+  - Project Documentation: PROJECT_DOC.md
   - Research Areas:
       - Gene Editing:
           - gene-editing/index.md
