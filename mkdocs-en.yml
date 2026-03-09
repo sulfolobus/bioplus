@@ -86,16 +86,31 @@ nav:
   - Research Areas:
       - Gene Editing:
           - gene-editing/index.md
-          - gene-editing/CRISPR-clinical.md
-          - gene-editing/gene-therapy.md
+          - gene-editing/crispr-technology/crispr-principles.md
+          - gene-editing/crispr-technology/crispr-clinical.md
+          - gene-editing/gene-therapy/gene-therapy-principles.md
+          - gene-editing/gene-therapy/genetic-disease-treatment.md
+          - gene-editing/gene-therapy/cancer-treatment.md
+          - gene-editing/gene-delivery/viral-vectors.md
+          - gene-editing/gene-delivery/nanoparticles.md
+          - gene-editing/gene-delivery/lnp-technology.md
+          - gene-editing/gene-editing-tools/base-editing.md
+          - gene-editing/gene-editing-tools/prime-editing.md
+          - gene-editing/ethics-regulation/ethical-issues.md
       - Medical Diagnosis:
           - medical-diagnosis/index.md
           - medical-diagnosis/liquid-biopsy.md
+          - medical-diagnosis/ctDNA-detection.md
           - medical-diagnosis/AI-diagnosis.md
+          - medical-diagnosis/medical-imaging-AI.md
+          - medical-diagnosis/PCR-detection.md
+          - medical-diagnosis/genetic-testing.md
       - Drug Development:
           - drug-development/index.md
           - drug-development/antibody-drugs.md
+          - drug-development/antibody-drug-development.md
           - drug-development/AI-pharmaceuticals.md
+          - drug-development/small-molecule-discovery.md
       - Biotechnology:
           - biotechnology/index.md
           - biotechnology/synthetic-biology.md
@@ -104,13 +119,19 @@ nav:
           - neurodegenerative-diseases/index.md
           - neurodegenerative-diseases/alzheimer.md
           - neurodegenerative-diseases/amnesia.md
+          - neurodegenerative-diseases/parkinsons-treatment.md
+          - neurodegenerative-diseases/huntingtons-treatment.md
       - Cardiovascular Diseases:
           - cardiovascular-diseases/index.md
           - cardiovascular-diseases/hypertension.md
+          - cardiovascular-diseases/coronary-disease-treatment.md
+          - cardiovascular-diseases/heart-failure-treatment.md
       - Sensory Dysfunction:
           - sensory-dysfunction/index.md
           - sensory-dysfunction/blindness-treatment.md
           - sensory-dysfunction/brain-machine-interface.md
+          - sensory-dysfunction/hearing-loss-treatment.md
+          - sensory-dysfunction/cochlear-implants.md
       - Turtle Disease:
           - turtle-disease/index.md
           - turtle-disease/comprehensive-treatment.md
