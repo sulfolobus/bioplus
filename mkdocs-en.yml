@@ -34,7 +34,7 @@ extra:
     - link: /
       name: 中文
       lang: zh
-    - link: /
+    - link: /en/
       name: English
       lang: en
   analytics:

@@ -31,7 +31,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/sulfolobus/bioplus
   alternate:
-    - link: /
+    - link: /en/
       name: English
       lang: en
     - link: /
