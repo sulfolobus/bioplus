@@ -279,20 +279,20 @@ This document summarizes the diagnosis, treatment, and prevention of common turt
 
 ### Main References
 
-1. Zhang Jian. "New Technology for Turtle Breeding and Disease Prevention in China" [M].
-2. Zhang Jian. "Color Atlas of Turtle Disease Diagnosis and Treatment in China" [M].
-3. Zhang Jian, Wang Baoliang. "Golden Handbook of Turtle Disease Prevention" [M].
-4. Zhou Ting et al. "Turtle Breeding in 7 Days" [M]. Nanjing Turtle Museum.
-5. Zhou Ting, Chen Rujiang, Lin Haiyan. "Learn Turtle Care Easily" [M].
-6. Zhou Ting, Chen Rujiang, Liang Yuyan et al. "Turtle Disease Illustrated" [M].
-7. Zhang Jingchun. "Turtle Care and Disease Prevention (2nd Edition)" [M].
-8. Wang Zengnian, An Ning. "Turtle Care and Disease Prevention Essentials" [M].
-9. Zhao Chunguang. "Chinese Herbal Medicine for Turtle Disease Prevention (精华版)" [M].
-10. Zhao Chunguang. "Illustrated Efficient Turtle Disease Prevention Technology" [M].
-11. Wang Yufeng. "Complete Guide to Healthy Turtle Breeding" [M].
-12. Wang Yufeng. "Efficient Turtle Breeding and Disease Prevention Technology" [M].
+1. Zhang Jian. "New Technology for Turtle Breeding and Disease Prevention in China" [M]
+2. Zhang Jian. "Color Atlas of Turtle Disease Diagnosis and Treatment in China" [M]
+3. Zhang Jian, Wang Baoliang. "Golden Handbook of Turtle Disease Prevention" [M]
+4. Zhou Ting et al. "Turtle Breeding in 7 Days" [M] Nanjing Turtle Museum.
+5. Zhou Ting, Chen Rujiang, Lin Haiyan. "Learn Turtle Care Easily" [M]
+6. Zhou Ting, Chen Rujiang, Liang Yuyan et al. "Turtle Disease Illustrated" [M]
+7. Zhang Jingchun. "Turtle Care and Disease Prevention (2nd Edition)" [M]
+8. Wang Zengnian, An Ning. "Turtle Care and Disease Prevention Essentials" [M]
+9. Zhao Chunguang. "Chinese Herbal Medicine for Turtle Disease Prevention (精华版)" [M]
+10. Zhao Chunguang. "Illustrated Efficient Turtle Disease Prevention Technology" [M]
+11. Wang Yufeng. "Complete Guide to Healthy Turtle Breeding" [M]
+12. Wang Yufeng. "Efficient Turtle Breeding and Disease Prevention Technology" [M]
 13. Chen Jiajia. "Turtle Home Medical Manual Collection" .
-14. Zhu Xinping. "Efficient Freshwater Turtle Breeding Guide" [M].
-15. Liu Zhigang, Ye Xiongping, Yao Yanhong. "Standardized Healthy Turtle Breeding" [M].
+14. Zhu Xinping. "Efficient Freshwater Turtle Breeding Guide" [M]
+15. Liu Zhigang, Ye Xiongping, Yao Yanhong. "Standardized Healthy Turtle Breeding" [M]
 
 > **Citation Format**: This document is compiled from the above public publications and materials for reference only. Please cite the source when quoting or reprinting and comply with relevant copyright regulations. Please consult a professional veterinarian for specific diagnosis and treatment.
