@@ -1,6 +1,6 @@
 # BioPlus - Life Science Practical Applications Platform
 
-![BioPlus](assets/logo.svg)
+![BioPlus](../assets/logo.svg)
 
 ## Welcome to BioPlus
 
