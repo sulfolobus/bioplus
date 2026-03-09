@@ -112,20 +112,29 @@ nav:
           - 药物研发/AI制药/AI制药技术.md
           - 药物研发/小分子药物/小分子药物发现.md
       - 生物技术:
-          - biotechnology/index.md
-          - biotechnology/synthetic-biology.md
-          - biotechnology/cell-therapy.md
+          - 生物技术/index.md
+          - 生物技术/细胞治疗/细胞治疗技术.md
+          - 生物技术/合成生物学/合成生物学原理.md
+          - 生物技术/生物信息学/生物信息学应用.md
       - 神经退化疾病:
-          - neurodegenerative-diseases/index.md
-          - neurodegenerative-diseases/alzheimer.md
-          - neurodegenerative-diseases/amnesia.md
+          - 神经退化疾病/index.md
+          - 神经退化疾病/阿尔茨海默病/阿尔茨海默病治疗.md
+          - 神经退化疾病/阿尔茨海默病/阿尔茨海默病预防.md
+          - 神经退化疾病/帕金森病/帕金森病治疗.md
+          - 神经退化疾病/亨廷顿病/亨廷顿病治疗.md
       - 心血管疾病:
-          - cardiovascular-diseases/index.md
-          - cardiovascular-diseases/hypertension.md
+          - 心血管疾病/index.md
+          - 心血管疾病/高血压/高血压治疗.md
+          - 心血管疾病/高血压/高血压预防.md
+          - 心血管疾病/冠心病/冠心病治疗.md
+          - 心血管疾病/心力衰竭/心力衰竭治疗.md
       - 感官功能障碍:
-          - sensory-dysfunction/index.md
-          - sensory-dysfunction/blindness-treatment.md
-          - sensory-dysfunction/brain-machine-interface.md
+          - 感官功能障碍/index.md
+          - 感官功能障碍/失明治疗/失明治疗.md
+          - 感官功能障碍/角膜移植/角膜移植.md
+          - 感官功能障碍/脑机接口/脑机接口原理.md
+          - 感官功能障碍/听力损失/听力损失治疗.md
+          - 感官功能障碍/人工耳蜗/人工耳蜗技术.md
       - 龟病防治:
           - 龟病防治/index.md
           - 龟病防治/龟病综合防治.md
