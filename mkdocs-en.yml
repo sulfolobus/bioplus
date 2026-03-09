@@ -30,6 +30,13 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/sulfolobus/bioplus
+  alternate:
+    - link: /
+      name: 中文
+      lang: zh
+    - link: /
+      name: English
+      lang: en
   analytics:
     provider: google
     property: G-XXXXXXXXXX
