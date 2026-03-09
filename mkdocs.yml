@@ -77,37 +77,79 @@ markdown_extensions:
       custom_checkbox: true
 
 nav:
-  - Home: index.md
-  - About: about.md
-  - Project Documentation: PROJECT_DOC.md
+  - Home:
+      zh: 首页
+      en: Home
+    link: index.md
+  - About:
+      zh: 关于我们
+      en: About
+    link: about.md
+  - Project Documentation:
+      zh: 项目文档
+      en: Project Documentation
+    link: PROJECT_DOC.md
   - Research Areas:
-      - Gene Editing:
-          - gene-editing/index.md
-          - gene-editing/CRISPR-clinical.md
-          - gene-editing/gene-therapy.md
-      - Medical Diagnosis:
-          - medical-diagnosis/index.md
-          - medical-diagnosis/liquid-biopsy.md
-          - medical-diagnosis/AI-diagnosis.md
-      - Drug Development:
-          - drug-development/index.md
-          - drug-development/antibody-drugs.md
-          - drug-development/AI-pharmaceuticals.md
-      - Biotechnology:
-          - biotechnology/index.md
-          - biotechnology/synthetic-biology.md
-          - biotechnology/cell-therapy.md
-      - Neurodegenerative Diseases:
-          - neurodegenerative-diseases/index.md
-          - neurodegenerative-diseases/alzheimer.md
-          - neurodegenerative-diseases/amnesia.md
-      - Cardiovascular Diseases:
-          - cardiovascular-diseases/index.md
-          - cardiovascular-diseases/hypertension.md
-      - Sensory Dysfunction:
-          - sensory-dysfunction/index.md
-          - sensory-dysfunction/blindness-treatment.md
-          - sensory-dysfunction/brain-machine-interface.md
-  - Research Groups: research-groups/index.md
-  - Achievements: achievements/index.md
-  - Popular Science: popular-science/index.md
+      zh: 研究领域
+      en: Research Areas
+      children:
+        - Gene Editing:
+            zh: 基因编辑应用
+            en: Gene Editing
+          children:
+            - gene-editing/index.md
+            - gene-editing/CRISPR-clinical.md
+            - gene-editing/gene-therapy.md
+        - Medical Diagnosis:
+            zh: 医学诊断
+            en: Medical Diagnosis
+          children:
+            - medical-diagnosis/index.md
+            - medical-diagnosis/liquid-biopsy.md
+            - medical-diagnosis/AI-diagnosis.md
+        - Drug Development:
+            zh: 药物研发
+            en: Drug Development
+          children:
+            - drug-development/index.md
+            - drug-development/antibody-drugs.md
+            - drug-development/AI-pharmaceuticals.md
+        - Biotechnology:
+            zh: 生物技术
+            en: Biotechnology
+          children:
+            - biotechnology/index.md
+            - biotechnology/synthetic-biology.md
+            - biotechnology/cell-therapy.md
+        - Neurodegenerative Diseases:
+            zh: 神经退化疾病
+            en: Neurodegenerative Diseases
+          children:
+            - neurodegenerative-diseases/index.md
+            - neurodegenerative-diseases/alzheimer.md
+            - neurodegenerative-diseases/amnesia.md
+        - Cardiovascular Diseases:
+            zh: 心血管疾病
+            en: Cardiovascular Diseases
+          children:
+            - cardiovascular-diseases/index.md
+            - cardiovascular-diseases/hypertension.md
+        - Sensory Dysfunction:
+            zh: 感官功能障碍
+            en: Sensory Dysfunction
+          children:
+            - sensory-dysfunction/index.md
+            - sensory-dysfunction/blindness-treatment.md
+            - sensory-dysfunction/brain-machine-interface.md
+  - Research Groups:
+      zh: 研究组
+      en: Research Groups
+    link: research-groups/index.md
+  - Achievements:
+      zh: 成果转化
+      en: Achievements
+    link: achievements/index.md
+  - Popular Science:
+      zh: 科普文章
+      en: Popular Science
+    link: popular-science/index.md
