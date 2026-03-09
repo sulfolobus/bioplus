@@ -12,27 +12,27 @@ This document summarizes the diagnosis, treatment, and prevention of common turt
 
 | Disease | Pathogen | Main Symptoms | Treatment |
 |---------|----------|----------------|------------|
-| Pneumonia | Bacteria/Virus | Open-mouth breathing, floating | Antibiotics, keep warm |
-| Gastroenteritis | Bacteria/Parasites | Loss of appetite, abnormal stool | Symptomatic treatment, improve water quality |
-| Septicemia | Bacteria | Lethargy, weakness, skin bleeding | Antibiotics, fluid therapy |
-| Shell Rot | Bacteria/Fungi | Soft shell, rot, foul odor | Clean wound, antibacterial medication |
-| Skin Rot | Bacteria | Skin ulceration, white discharge | Disinfect, antibiotic bath |
-| Eye Disease | Bacteria | Swollen eyes, discharge | Clean eyes, antibiotic eye drops |
+| [Pneumonia](bacterial/pneumonia.md) | Bacteria/Virus | Open-mouth breathing, floating | Antibiotics, keep warm |
+| [Gastroenteritis](bacterial/gastroenteritis.md) | Bacteria/Parasites | Loss of appetite, abnormal stool | Symptomatic treatment, improve water quality |
+| [Septicemia](bacterial/septicemia.md) | Bacteria | Lethargy, weakness, skin bleeding | Antibiotics, fluid therapy |
+| [Shell Rot](bacterial/shell-rot.md) | Bacteria/Fungi | Soft shell, rot, foul odor | Clean wound, antibacterial medication |
+| [Skin Rot](bacterial/skin-rot.md) | Bacteria | Skin ulceration, white discharge | Disinfect, antibiotic bath |
+| [Eye Disease](bacterial/eye-disease.md) | Bacteria | Swollen eyes, discharge | Clean eyes, antibiotic eye drops |
 
 #### Viral Diseases
 
 | Disease | Pathogen | Main Symptoms | Treatment |
 |---------|----------|----------------|------------|
-| Herpesvirus | Herpesvirus | Oral ulcers, nasal discharge, lethargy | Symptomatic, boost immunity |
-| Adenovirus | Adenovirus | Anorexia, weight loss, abnormal stool | Supportive care, boost immunity |
-| Iridovirus | Iridovirus | Skin lesions, lethargy, behavioral changes | Symptomatic treatment |
+| [Herpesvirus](viral/herpesvirus.md) | Herpesvirus | Oral ulcers, nasal discharge, lethargy | Symptomatic, boost immunity |
+| [Adenovirus](viral/adenovirus.md) | Adenovirus | Anorexia, weight loss, abnormal stool | Supportive care, boost immunity |
+| [Iridovirus](viral/iridovirus.md) | Iridovirus | Skin lesions, lethargy, behavioral changes | Symptomatic treatment |
 
 #### Fungal Diseases
 
 | Disease | Pathogen | Main Symptoms | Treatment |
 |---------|----------|----------------|------------|
-| Fungal Dermatitis | Fungi | White cotton-like material, itching | Antifungal medication, improve environment |
-| Shell Fungus | Fungi | White/green spots on shell | Scrape fungus, medication |
+| [Fungal Dermatitis](fungal/dermatitis.md) | Fungi | White cotton-like material, itching | Antifungal medication, improve environment |
+| [Shell Fungus](fungal/shell-fungus.md) | Fungi | White/green spots on shell | Scrape fungus, medication |
 
 ### 2. Parasitic Diseases
 
@@ -40,21 +40,21 @@ This document summarizes the diagnosis, treatment, and prevention of common turt
 
 | Parasite Type | Transmission | Main Symptoms | Treatment |
 |---------------|--------------|----------------|------------|
-| Roundworms | Food, water | Weight loss, appetite loss, worms in stool | Deworming (e.g., Albendazole) |
-| Tapeworms | Intermediate host | Malnutrition, weight loss | Deworming (e.g., Praziquantel) |
-| Blood Parasites | Tick bite | Anemia, lethargy | Deworming, supportive care |
-| Protozoa | Water, food | Diarrhea, weight loss | Anti-protozoal drugs |
+| [Roundworms](parasites/roundworms.md) | Food, water | Weight loss, appetite loss, worms in stool | Deworming (e.g., Albendazole) |
+| [Tapeworms](parasites/tapeworms.md) | Intermediate host | Malnutrition, weight loss | Deworming (e.g., Praziquantel) |
+| [Blood Parasites](parasites/blood-parasites.md) | Tick bite | Anemia, lethargy | Deworming, supportive care |
+| [Protozoa](parasites/protozoa.md) | Water, food | Diarrhea, weight loss | Anti-protozoal drugs |
 
 #### External Parasites
 
 | Parasite Type | Location | Main Symptoms | Treatment |
 |---------------|----------|----------------|------------|
-| Ticks | Skin folds | Itching, skin inflammation | Manual removal, insecticide |
-| Mites | Body | Itching, skin shedding | Bath treatment, insecticide |
+| [Ticks](parasites/ticks.md) | Skin folds | Itching, skin inflammation | Manual removal, insecticide |
+| [Mites](parasites/mites.md) | Body | Itching, skin shedding | Bath treatment, insecticide |
 
 ### 3. Metabolic Diseases
 
-#### Soft Shell Disease
+#### [Soft Shell Disease](other/soft-shell.md)
 
 **Cause**: Calcium or Vitamin D deficiency
 
@@ -73,7 +73,7 @@ This document summarizes the diagnosis, treatment, and prevention of common turt
 - Daily sun exposure
 - Regular Vitamin D3 supplementation
 
-#### Obesity
+#### [Obesity](other/obesity.md)
 
 **Cause**: Overfeeding, lack of exercise
 
@@ -91,7 +91,7 @@ This document summarizes the diagnosis, treatment, and prevention of common turt
 - Feed in moderation
 - Provide adequate exercise space
 
-#### Gout
+#### [Gout](other/gout.md)
 
 **Cause**: Protein metabolism disorder, dehydration
 
@@ -112,7 +112,7 @@ This document summarizes the diagnosis, treatment, and prevention of common turt
 
 ### 4. Other Common Diseases
 
-#### Bladder Stones
+#### [Bladder Stones](other/bladder-stones.md)
 
 **Cause**: Dehydration, mineral metabolism disorder
 
@@ -130,7 +130,7 @@ This document summarizes the diagnosis, treatment, and prevention of common turt
 - Ensure adequate water intake
 - Proper fiber supplementation
 
-#### Heat Stroke
+#### [Heat Stroke](other/heat-stroke.md)
 
 **Cause**: High temperature, direct sunlight
 
@@ -149,7 +149,7 @@ This document summarizes the diagnosis, treatment, and prevention of common turt
 - Maintain suitable temperature
 - Ensure ventilation
 
-#### Frostbite
+#### [Frostbite](other/frostbite.md)
 
 **Cause**: Low temperature environment
 
