@@ -29,7 +29,7 @@ Including ischemic and hemorrhagic stroke.
 | Factor | Impact |
 |--------|--------|
 | Hypertension | Largest risk factor |
-| High血脂 | Atherosclerosis |
+| High Blood Lipids | Atherosclerosis |
 | Diabetes | Vascular damage |
 | Smoking | Endothelial damage |
 | Obesity | Metabolic syndrome |

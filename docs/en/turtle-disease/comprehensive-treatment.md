@@ -287,7 +287,7 @@ This document summarizes the diagnosis, treatment, and prevention of common turt
 6. Zhou Ting, Chen Rujiang, Liang Yuyan et al. "Turtle Disease Illustrated" [M]
 7. Zhang Jingchun. "Turtle Care and Disease Prevention (2nd Edition)" [M]
 8. Wang Zengnian, An Ning. "Turtle Care and Disease Prevention Essentials" [M]
-9. Zhao Chunguang. "Chinese Herbal Medicine for Turtle Disease Prevention (精华版)" [M]
+9. Zhao Chunguang. "Chinese Herbal Medicine for Turtle Disease Prevention (Essential Edition)" [M]
 10. Zhao Chunguang. "Illustrated Efficient Turtle Disease Prevention Technology" [M]
 11. Wang Yufeng. "Complete Guide to Healthy Turtle Breeding" [M]
 12. Wang Yufeng. "Efficient Turtle Breeding and Disease Prevention Technology" [M]
