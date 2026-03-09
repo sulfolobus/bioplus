@@ -1,4 +1,4 @@
-# 甲壳真菌病
+# Shell Fungus
 
 *This page is under translation. Please refer to the Chinese version for content.*
 

@@ -1,4 +1,4 @@
-# 蜱虫病
+# Tick Infestation
 
 *This page is under translation. Please refer to the Chinese version for content.*
 

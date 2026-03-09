@@ -1,4 +1,4 @@
-# 腺病毒病
+# Adenovirus Disease
 
 *This page is under translation. Please refer to the Chinese version for content.*
 

@@ -1,4 +1,4 @@
-# 绦虫病
+# Tapeworm Infection
 
 *This page is under translation. Please refer to the Chinese version for content.*
 

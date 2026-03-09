@@ -1,4 +1,4 @@
-# 败血症
+# Septicemia
 
 *This page is under translation. Please refer to the Chinese version for content.*
 

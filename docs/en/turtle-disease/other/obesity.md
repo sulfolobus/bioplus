@@ -1,4 +1,4 @@
-# 肥胖症
+# Obesity
 
 *This page is under translation. Please refer to the Chinese version for content.*
 

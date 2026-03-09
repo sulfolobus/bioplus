@@ -1,4 +1,4 @@
-# 腐皮病
+# Skin Rot
 
 *This page is under translation. Please refer to the Chinese version for content.*
 

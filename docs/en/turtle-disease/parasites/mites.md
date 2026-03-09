@@ -1,4 +1,4 @@
-# 螨虫病
+# Mite Infestation
 
 *This page is under translation. Please refer to the Chinese version for content.*
 

@@ -1,4 +1,4 @@
-# 疱疹病毒病
+# Herpesvirus Disease
 
 *This page is under translation. Please refer to the Chinese version for content.*
 

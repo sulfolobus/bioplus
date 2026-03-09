@@ -1,4 +1,4 @@
-# 真菌性皮炎
+# Fungal Dermatitis
 
 *This page is under translation. Please refer to the Chinese version for content.*
 
