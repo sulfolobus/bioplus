@@ -85,17 +85,32 @@ nav:
   - 工作规范: PROJECT_GUIDE.md
   - 研究领域:
       - 基因编辑应用:
-          - gene-editing/index.md
-          - gene-editing/CRISPR-clinical.md
-          - gene-editing/gene-therapy.md
+          - 基因编辑应用/index.md
+          - 基因编辑应用/CRISPR技术/CRISPR原理.md
+          - 基因编辑应用/CRISPR技术/CRISPR临床应用.md
+          - 基因编辑应用/基因治疗/基因治疗原理.md
+          - 基因编辑应用/基因治疗/遗传病治疗.md
+          - 基因编辑应用/基因治疗/癌症治疗.md
+          - 基因编辑应用/基因递送/病毒载体.md
+          - 基因编辑应用/基因递送/纳米颗粒.md
+          - 基因编辑应用/基因递送/LNP技术.md
+          - 基因编辑应用/基因编辑工具/Base编辑.md
+          - 基因编辑应用/基因编辑工具/Prime编辑.md
+          - 基因编辑应用/伦理与监管/伦理问题.md
       - 医学诊断:
-          - medical-diagnosis/index.md
-          - medical-diagnosis/liquid-biopsy.md
-          - medical-diagnosis/AI-diagnosis.md
+          - 医学诊断/index.md
+          - 医学诊断/液体活检技术/液体活检原理.md
+          - 医学诊断/液体活检技术/ctDNA检测.md
+          - 医学诊断/AI诊断/AI诊断原理.md
+          - 医学诊断/AI诊断/医学影像AI.md
+          - 医学诊断/分子诊断/PCR检测.md
+          - 医学诊断/分子诊断/基因检测.md
       - 药物研发:
-          - drug-development/index.md
-          - drug-development/antibody-drugs.md
-          - drug-development/AI-pharmaceuticals.md
+          - 药物研发/index.md
+          - 药物研发/抗体药物技术/抗体药物原理.md
+          - 药物研发/抗体药物技术/抗体药物发展.md
+          - 药物研发/AI制药/AI制药技术.md
+          - 药物研发/小分子药物/小分子药物发现.md
       - 生物技术:
           - biotechnology/index.md
           - biotechnology/synthetic-biology.md

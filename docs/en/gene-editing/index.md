@@ -1,18 +1,35 @@
 # Gene Editing Applications
 
-Gene editing technology has become one of the most revolutionary tools in life sciences. This section focuses on the practical applications of gene editing in medicine, agriculture, and other fields.
+Gene editing technology has become one of the most revolutionary tools in life science. This section focuses on practical applications of gene editing in medicine and agriculture.
 
-## Key Topics
+## Core Topics
 
-- **CRISPR Clinical Applications**: Latest progress of gene editing technology in clinical treatment
-- **Gene Therapy**: Gene therapy solutions for genetic diseases
-- **Agricultural Improvement**: Applications of gene editing in crop improvement
+### CRISPR Technology
 
-## Featured Articles
+- [CRISPR Principles](crispr-technology/crispr-principles.md) - Technology principles and mechanisms
+- [CRISPR Clinical Applications](crispr-technology/crispr-clinical.md) - Latest progress in clinical treatment
 
-- [CRISPR Clinical Progress](CRISPR-clinical.md)
-- [Frontiers in Gene Therapy](gene-therapy.md)
+### Gene Therapy
 
-## Related Research Teams
+- [Gene Therapy Principles](gene-therapy/gene-therapy-principles.md) - Treatment strategies and vectors
+- [Genetic Disease Treatment](gene-therapy/genetic-disease-treatment.md) - Treatment approaches
+- [Cancer Treatment](gene-therapy/cancer-treatment.md) - CAR-T and immunotherapy
 
-Learn more about international gene editing research teams → [Research Teams Page](../research-groups/index.md)
+### Gene Delivery
+
+- [Viral Vectors](gene-delivery/viral-vectors.md) - AAV, adenovirus, etc.
+- [Nanoparticles](gene-delivery/nanoparticles.md) - LNP and non-viral vectors
+- [LNP Technology](gene-delivery/lnp-technology.md) - Lipid nanoparticles
+
+### Gene Editing Tools
+
+- [Base Editing](gene-editing-tools/base-editing.md) - Single-base precision editing
+- [Prime Editing](gene-editing-tools/prime-editing.md) - Comprehensive precision editing
+
+### Ethics and Regulation
+
+- [Ethical Issues](ethics-regulation/ethical-issues.md) - Ethical debates and regulation
+
+## Related Research Groups
+
+Learn more about international gene editing research teams → [Research Groups](../research-groups/index.md)
