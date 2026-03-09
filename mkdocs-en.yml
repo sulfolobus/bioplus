@@ -31,10 +31,10 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/sulfolobus/bioplus
   alternate:
-    - link: /
+    - link: /bioplus/
       name: 中文
       lang: zh
-    - link: /en/
+    - link: /bioplus/en/
       name: English
       lang: en
   analytics:
