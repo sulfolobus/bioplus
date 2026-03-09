@@ -26,6 +26,10 @@
 | 10 | 新增心血管疾病板块 | 高血压中西医治疗 | 2026-03-08 |
 | 11 | 新增感官功能障碍板块 | 失明治疗、脑机接口 | 2026-03-08 |
 | 12 | 新增英文版本 | 完整翻译 31 篇文章 | 2026-03-09 |
+| 13 | 新增龟病防治板块 | 细菌性疾病、病毒性疾病等 6 大类 24 种疾病 | 2026-03-09 |
+| 14 | 添加语言切换按钮 | 中英文版本切换功能 | 2026-03-09 |
+| 15 | 创建项目工作规范 | PROJECT_GUIDE.md 规范文档 | 2026-03-09 |
+| 16 | 清理引用格式 | 移除 Z-Library，规范化引用格式 | 2026-03-09 |
 
 ---
 
@@ -185,6 +189,41 @@ bioplus/
     │   ├── 失明治疗.md
     │   └── 脑机接口.md
     │
+    ├── 龟病防治/            # 研究领域 8（中文）
+    │   ├── index.md
+    │   ├── 龟病综合防治.md
+    │   ├── 常见龟病诊断.md
+    │   ├── 龟类营养指南.md
+    │   ├── 细菌性疾病/
+    │   │   ├── 肺炎.md
+    │   │   ├── 肠胃炎.md
+    │   │   ├── 败血症.md
+    │   │   ├── 腐甲病.md
+    │   │   ├── 腐皮病.md
+    │   │   └── 眼病.md
+    │   ├── 病毒性疾病/
+    │   │   ├── 疱疹病毒病.md
+    │   │   ├── 腺病毒病.md
+    │   │   └── 虹彩病毒病.md
+    │   ├── 真菌性疾病/
+    │   │   ├── 真菌性皮炎.md
+    │   │   └── 甲壳真菌病.md
+    │   ├── 体内寄生虫/
+    │   │   ├── 蛔虫病.md
+    │   │   ├── 绦虫病.md
+    │   │   ├── 血液寄生虫病.md
+    │   │   └── 原虫病.md
+    │   ├── 体外寄生虫/
+    │   │   ├── 蜱虫病.md
+    │   │   └── 螨虫病.md
+    │   └── 其他疾病/
+    │       ├── 软壳病.md
+    │       ├── 肥胖症.md
+    │       ├── 痛风.md
+    │       ├── 膀胱结石.md
+    │       ├── 中暑.md
+    │       └── 冻伤.md
+    |
     # ==================== 英文版 ====================
     ├── en/                  # 英文版本根目录
     │   ├── index.md        # 首页（English）
@@ -216,6 +255,39 @@ bioplus/
     │   │   ├── index.md
     │   │   ├── blindness-treatment.md
     │   │   └── brain-machine-interface.md
+    │   ├── turtle-disease/
+    │   │   ├── index.md
+    │   │   ├── comprehensive-treatment.md
+    │   │   ├── common-diagnosis.md
+    │   │   ├── turtle-nutrition.md
+    │   │   ├── bacterial/
+    │   │   │   ├── pneumonia.md
+    │   │   │   ├── gastroenteritis.md
+    │   │   │   ├── septicemia.md
+    │   │   │   ├── shell-rot.md
+    │   │   │   ├── skin-rot.md
+    │   │   │   └── eye-disease.md
+    │   │   ├── viral/
+    │   │   │   ├── herpesvirus.md
+    │   │   │   ├── adenovirus.md
+    │   │   │   └── iridovirus.md
+    │   │   ├── fungal/
+    │   │   │   ├── dermatitis.md
+    │   │   │   └── shell-fungus.md
+    │   │   ├── parasites/
+    │   │   │   ├── roundworms.md
+    │   │   │   ├── tapeworms.md
+    │   │   │   ├── blood-parasites.md
+    │   │   │   ├── protozoa.md
+    │   │   │   ├── ticks.md
+    │   │   │   └── mites.md
+    │   │   └── other/
+    │   │       ├── soft-shell.md
+    │   │       ├── obesity.md
+    │   │       ├── gout.md
+    │   │       ├── bladder-stones.md
+    │   │       ├── heat-stroke.md
+    │   │       └── frostbite.md
     │   ├── research-groups/
     │   │   └── index.md
     │   ├── achievements/
@@ -245,7 +317,8 @@ bioplus/
 | 神经退化疾病 | 3 篇 | 3 篇 |
 | 心血管疾病 | 2 篇 | 2 篇 |
 | 感官功能障碍 | 3 篇 | 3 篇 |
-| **总计** | **31 篇** | **31 篇** |
+| 龟病防治 | 27 篇 | 27 篇 |
+| **总计** | **58 篇** | **58 篇** |
 
 ---
 
