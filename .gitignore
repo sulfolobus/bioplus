@@ -50,3 +50,6 @@ Thumbs.db
 *.log
 temp/
 tmp/
+
+# Trae AI
+.trae/
