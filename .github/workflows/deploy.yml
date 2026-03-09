@@ -33,8 +33,21 @@ jobs:
         run: |
           pip install mkdocs mkdocs-material mkdocs-minify-plugin
 
-      - name: Build MkDocs
-        run: mkdocs build
+      - name: Build Chinese version
+        run: |
+          mkdocs build -f mkdocs.yml
+          mv site site_zh
+
+      - name: Build English version
+        run: |
+          mkdocs build -f mkdocs-en.yml
+          mv site site_en
+
+      - name: Combine sites
+        run: |
+          mkdir -p site
+          cp -r site_zh/* site/
+          cp -r site_en/* site/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
