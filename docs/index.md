@@ -2,6 +2,8 @@
 
 ![BioPlus](assets/logo.svg)
 
+## <span id="time-greeting"></span>
+
 ## 欢迎来到 BioPlus
 
 BioPlus 是一个专注于**生命科学实践应用**的科普平台。我们致力于连接科研问题、研究组与研究成果，让生命科学知识触手可及。
