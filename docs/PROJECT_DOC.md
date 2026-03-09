@@ -408,7 +408,151 @@ git push
 
 ---
 
-## 九、后续优化建议（免费方案）
+## 九、技术优化配置
+
+### 1. Google Analytics 流量统计
+
+**配置步骤**：
+1. 访问 https://analytics.google.com/
+2. 创建账号并获取跟踪 ID（格式：G-XXXXXXXXXX）
+3. 在 mkdocs.yml 中配置：
+
+```yaml
+extra:
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # 替换为你的跟踪 ID
+```
+
+**查看数据**：
+- 访问量
+- 访客来源
+- 页面浏览量
+- 用户地理位置
+- 设备类型
+
+---
+
+### 2. SEO 搜索引擎优化
+
+#### 2.1 sitemap.xml（站点地图）
+
+MkDocs Material 自动生成站点地图，访问：
+```
+https://sulfolobus.github.io/bioplus/sitemap.xml
+```
+
+#### 2.2 robots.txt（搜索引擎配置）
+
+当前已配置 `docs/robots.txt`：
+
+```
+User-agent: *
+Allow: /
+Sitemap: https://sulfolobus.github.io/bioplus/sitemap.xml
+```
+
+#### 2.3 Meta 标签配置
+
+在 mkdocs.yml 中配置：
+
+```yaml
+meta:
+  tags:
+    - life science
+    - biotechnology
+    - popular science
+    - 基因编辑
+    - 生物技术
+```
+
+#### 2.4 Google Search Console
+
+1. 访问 https://search.google.com/search-console
+2. 添加域名：sulfolobus.github.io/bioplus
+3. 验证所有权（添加 HTML 标签或 DNS 记录）
+4. 提交站点地图
+
+---
+
+### 3. 社交媒体分享配置
+
+#### Open Graph 标签
+
+在 mkdocs.yml 中添加：
+
+```yaml
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sulfolobus/bioplus
+    - icon: fontawesome/brands/weixin
+      link: weixin://dl/chat?BioPlus  # 微信公众号二维码链接
+```
+
+#### Twitter Card
+
+```yaml
+extra:
+  speakerdeck:
+    id: your-presentation-id
+```
+
+---
+
+### 4. 网站性能优化
+
+#### 4.1 图片优化
+
+- 使用 WebP 格式（比 PNG/JPG 小 30%）
+- 压缩图片：https://squoosh.app/
+- 避免使用过大的图片（建议 < 500KB）
+
+#### 4.2 CDN 加速
+
+GitHub Pages 自带 Cloudflare CDN，全球访问速度有保障。
+
+#### 4.3 缓存配置
+
+在 `docs/.nojekyll` 文件中配置缓存策略。
+
+---
+
+### 5. 安全配置
+
+#### 5.1 HTTPS
+
+GitHub Pages 自动提供 HTTPS，无需额外配置。
+
+#### 5.2 Content Security Policy
+
+在 mkdocs.yml 中可添加：
+
+```yaml
+extra:
+  csp:
+    script-src: "'self' 'unsafe-inline'"
+    style-src: "'self' 'unsafe-inline'"
+```
+
+---
+
+### 6. 备份与恢复
+
+#### 6.1 自动备份
+
+代码已托管在 GitHub，每次提交都有完整历史。
+
+#### 6.2 手动备份
+
+```bash
+# 导出所有文件
+zip -r bioplus-backup-$(date +%Y%m%d).zip docs/ mkdocs.yml
+```
+
+---
+
+## 十、后续优化建议（免费方案）
 
 ### 1. 完善科普文章内容（免费）
 
@@ -462,7 +606,7 @@ extra:
 
 ---
 
-## 十、常用命令
+## 十一、常用命令
 
 ```bash
 # 本地预览
@@ -477,7 +621,7 @@ python3 -m mkdocs --help
 
 ---
 
-## 十一、注意事项
+## 十二、注意事项
 
 1. **内容写作**：使用 Markdown 格式，位于 `docs/` 目录
 2. **图片放置**：图片放在 `docs/assets/` 目录
@@ -487,12 +631,14 @@ python3 -m mkdocs --help
 
 ---
 
-## 十二、相关资源
+## 十三、相关资源
 
 - MkDocs 文档：https://www.mkdocs.org/
 - Material 主题：https://squidfunk.github.io/mkdocs-material/
 - GitHub：https://github.com/sulfolobus/bioplus
 - GitHub Actions：https://docs.github.com/en/actions
+- Google Analytics：https://analytics.google.com/
+- Google Search Console：https://search.google.com/search-console
 
 ---
 
