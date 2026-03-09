@@ -2,7 +2,7 @@
 
 ![BioPlus](assets/logo.svg)
 
-## <span id="time-greeting"></span>
+## <span id="time-greeting" data-morning="早上好" data-noon="中午好" data-afternoon="下午好" data-evening="晚上好" data-night="夜深了">早上好</span>
 
 ## 欢迎来到 BioPlus
 
