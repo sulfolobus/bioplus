@@ -76,37 +76,37 @@ markdown_extensions:
       custom_checkbox: true
 
 nav:
-  - Home: index.md
-  - About: about.md
-  - Project Documentation: PROJECT_DOC.md
-  - Research Areas:
-      - Gene Editing:
+  - 首页: index.md
+  - 关于我们: about.md
+  - 项目文档: PROJECT_DOC.md
+  - 研究领域:
+      - 基因编辑应用:
           - gene-editing/index.md
           - gene-editing/CRISPR-clinical.md
           - gene-editing/gene-therapy.md
-      - Medical Diagnosis:
+      - 医学诊断:
           - medical-diagnosis/index.md
           - medical-diagnosis/liquid-biopsy.md
           - medical-diagnosis/AI-diagnosis.md
-      - Drug Development:
+      - 药物研发:
           - drug-development/index.md
           - drug-development/antibody-drugs.md
           - drug-development/AI-pharmaceuticals.md
-      - Biotechnology:
+      - 生物技术:
           - biotechnology/index.md
           - biotechnology/synthetic-biology.md
           - biotechnology/cell-therapy.md
-      - Neurodegenerative Diseases:
+      - 神经退化疾病:
           - neurodegenerative-diseases/index.md
           - neurodegenerative-diseases/alzheimer.md
           - neurodegenerative-diseases/amnesia.md
-      - Cardiovascular Diseases:
+      - 心血管疾病:
           - cardiovascular-diseases/index.md
           - cardiovascular-diseases/hypertension.md
-      - Sensory Dysfunction:
+      - 感官功能障碍:
           - sensory-dysfunction/index.md
           - sensory-dysfunction/blindness-treatment.md
           - sensory-dysfunction/brain-machine-interface.md
-  - Research Groups: research-groups/index.md
-  - Achievements: achievements/index.md
-  - Popular Science: popular-science/index.md
+  - 研究组: research-groups/index.md
+  - 成果转化: achievements/index.md
+  - 科普文章: popular-science/index.md
