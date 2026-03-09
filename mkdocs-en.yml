@@ -109,6 +109,35 @@ nav:
           - turtle-disease/comprehensive-treatment.md
           - turtle-disease/common-diagnosis.md
           - turtle-disease/turtle-nutrition.md
+          - Bacterial Diseases:
+              - turtle-disease/bacterial/pneumonia.md
+              - turtle-disease/bacterial/gastroenteritis.md
+              - turtle-disease/bacterial/septicemia.md
+              - turtle-disease/bacterial/shell-rot.md
+              - turtle-disease/bacterial/skin-rot.md
+              - turtle-disease/bacterial/eye-disease.md
+          - Viral Diseases:
+              - turtle-disease/viral/herpesvirus.md
+              - turtle-disease/viral/adenovirus.md
+              - turtle-disease/viral/iridovirus.md
+          - Fungal Diseases:
+              - turtle-disease/fungal/dermatitis.md
+              - turtle-disease/fungal/shell-fungus.md
+          - Internal Parasites:
+              - turtle-disease/parasites/roundworms.md
+              - turtle-disease/parasites/tapeworms.md
+              - turtle-disease/parasites/blood-parasites.md
+              - turtle-disease/parasites/protozoa.md
+          - External Parasites:
+              - turtle-disease/parasites/ticks.md
+              - turtle-disease/parasites/mites.md
+          - Other Diseases:
+              - turtle-disease/other/soft-shell.md
+              - turtle-disease/other/obesity.md
+              - turtle-disease/other/gout.md
+              - turtle-disease/other/bladder-stones.md
+              - turtle-disease/other/heat-stroke.md
+              - turtle-disease/other/frostbite.md
   - Research Groups: research-groups/index.md
   - Achievements: achievements/index.md
   - Popular Science: popular-science/index.md
