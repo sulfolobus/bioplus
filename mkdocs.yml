@@ -75,6 +75,7 @@ nav:
   - 首页: index.md
   - 关于我们: about.md
   - 项目文档: PROJECT_DOC.md
+  - 工作规范: PROJECT_GUIDE.md
   - 研究领域:
       - 基因编辑应用:
           - gene-editing/index.md
@@ -105,6 +106,7 @@ nav:
           - sensory-dysfunction/brain-machine-interface.md
       - 龟病防治:
           - 龟病防治/index.md
+          - 龟病防治/龟病综合防治.md
           - 龟病防治/常见龟病诊断.md
           - 龟病防治/龟类营养指南.md
   - 研究组: research-groups/index.md

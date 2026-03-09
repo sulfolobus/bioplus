@@ -75,6 +75,7 @@ nav:
   - Home: index.md
   - About: about.md
   - Project Documentation: PROJECT_DOC.md
+  - Project Guide: PROJECT_GUIDE.md
   - Research Areas:
       - Gene Editing:
           - gene-editing/index.md
@@ -105,6 +106,7 @@ nav:
           - sensory-dysfunction/brain-machine-interface.md
       - Turtle Disease:
           - turtle-disease/index.md
+          - turtle-disease/comprehensive-treatment.md
           - turtle-disease/common-diagnosis.md
           - turtle-disease/turtle-nutrition.md
   - Research Groups: research-groups/index.md
