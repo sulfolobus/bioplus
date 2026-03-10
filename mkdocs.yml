@@ -170,3 +170,10 @@ nav:
   - 研究组: research-groups/index.md
   - 成果转化: achievements/index.md
   - 科普文章: popular-science/index.md
+  - 中医经典:
+      - 中医经典/index.md
+      - 中医经典/黄帝内经.md
+      - 中医经典/伤寒论.md
+      - 中医经典/金匮要略.md
+      - 中医经典/本草纲目.md
+      - 中医经典/养生智慧.md

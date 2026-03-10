@@ -169,6 +169,13 @@ nav:
   - Research Groups: research-groups/index.md
   - Achievements: achievements/index.md
   - Popular Science: popular-science/index.md
+  - Traditional Chinese Medicine:
+      - traditional-chinese-medicine/index.md
+      - traditional-chinese-medicine/huangdi-neijing.md
+      - traditional-chinese-medicine/shanghan-lun.md
+      - traditional-chinese-medicine/jingui-yaolue.md
+      - traditional-chinese-medicine/bencao-gangmu.md
+      - traditional-chinese-medicine/wisdom-of-health-preservation.md
 
 docs_dir: docs/en
 site_dir: site/en
