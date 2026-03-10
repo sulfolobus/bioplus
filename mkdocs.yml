@@ -41,7 +41,6 @@ extra:
     provider: google
     property: G-XXXXXXXXXX
   scripts:
-    - assets/javascripts/time-greeting.js
     - assets/anti-copy.js
 
 markdown_extensions:

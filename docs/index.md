@@ -2,7 +2,27 @@
 
 ![BioPlus](assets/logo.svg)
 
-## <span id="time-greeting" data-morning="早上好" data-noon="中午好" data-afternoon="下午好" data-evening="晚上好" data-night="夜深了">早上好</span>
+## <span id="greeting">早上好</span>
+
+<script>
+(function() {
+  var hour = new Date().getHours();
+  var greeting = "早上好";
+  if (hour >= 5 && hour < 12) {
+    greeting = "早上好";
+  } else if (hour >= 12 && hour < 14) {
+    greeting = "中午好";
+  } else if (hour >= 14 && hour < 18) {
+    greeting = "下午好";
+  } else if (hour >= 18 && hour < 22) {
+    greeting = "晚上好";
+  } else {
+    greeting = "夜深了";
+  }
+  var el = document.getElementById("greeting");
+  if (el) el.textContent = greeting;
+})();
+</script>
 
 ## 欢迎来到 BioPlus
 

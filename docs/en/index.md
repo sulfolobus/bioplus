@@ -2,7 +2,27 @@
 
 ![BioPlus](../assets/logo.svg)
 
-## <span id="time-greeting" data-morning="Good morning" data-noon="Good noon" data-afternoon="Good afternoon" data-evening="Good evening" data-night="Late night">Good morning</span>
+## <span id="greeting">Good morning</span>
+
+<script>
+(function() {
+  var hour = new Date().getHours();
+  var greeting = "Good morning";
+  if (hour >= 5 && hour < 12) {
+    greeting = "Good morning";
+  } else if (hour >= 12 && hour < 14) {
+    greeting = "Good noon";
+  } else if (hour >= 14 && hour < 18) {
+    greeting = "Good afternoon";
+  } else if (hour >= 18 && hour < 22) {
+    greeting = "Good evening";
+  } else {
+    greeting = "Late night";
+  }
+  var el = document.getElementById("greeting");
+  if (el) el.textContent = greeting;
+})();
+</script>
 
 ## Welcome to BioPlus
 
