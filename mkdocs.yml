@@ -169,7 +169,10 @@ nav:
               - 龟病防治/其他疾病/冻伤.md
   - 研究组: research-groups/index.md
   - 成果转化: achievements/index.md
-  - 科普文章: popular-science/index.md
+  - 科普文章: 科普文章/index.md
+  - 学习资源:
+      - 高中生物学知识: 高中生物学知识/index.md
+      - 生物学竞赛知识: 生物学竞赛知识/index.md
   - 中医经典:
       - 中医经典/index.md
       - 中医经典/黄帝内经.md

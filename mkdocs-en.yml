@@ -169,6 +169,9 @@ nav:
   - Research Groups: research-groups/index.md
   - Achievements: achievements/index.md
   - Popular Science: popular-science/index.md
+  - Learning Resources:
+      - High School Biology: high-school-biology/index.md
+      - Biology Olympiad: biology-competition/index.md
   - Traditional Chinese Medicine:
       - traditional-chinese-medicine/index.md
       - traditional-chinese-medicine/huangdi-neijing.md

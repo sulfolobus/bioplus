@@ -48,6 +48,24 @@ Follow innovative drug development fields including antibody drugs and AI-powere
 ### 🔬 Biotechnology
 Explore revolutionary biotechnology including synthetic biology and cell therapy.
 
+## Learning Resources
+
+Start here if you want a more focused path, whether you are building a school-level foundation or preparing for competition training.
+
+<div class="grid cards" markdown>
+
+-   :material-school: **High School Biology**
+  ---
+  A structured overview of core concepts and common problem types for high school biology study.
+  [:material-arrow-right: Enter topic](high-school-biology/index.md)
+
+-   :material-trophy: **Biology Olympiad**
+  ---
+  Topic-based review, thinking exercises, and advanced reading for systematic competition preparation.
+  [:material-arrow-right: Enter topic](biology-competition/index.md)
+
+</div>
+
 ### 🧠 Neurodegenerative Diseases
 Research progress on Alzheimer's disease, amnesia, and other neurodegenerative conditions.
 
