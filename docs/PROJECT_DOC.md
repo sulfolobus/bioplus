@@ -2,717 +2,332 @@
 
 ## 项目状态
 
-**上线地址**: https://sulfolobus.github.io/bioplus/
-**英文版地址**: https://sulfolobus.github.io/bioplus/en/
-**GitHub 仓库**: https://github.com/sulfolobus/bioplus
-**项目状态**: 已上线运行中（中英文版本）
-**当前语言**: 中文、English
-
----
-
-## 已完成任务
-
-| 序号 | 任务 | 说明 | 完成时间 |
-|------|------|------|----------|
-| 1 | 项目框架搭建 | MkDocs + Material 主题配置 | 2026-03-08 |
-| 2 | GitHub 仓库创建 | sulfolobus/bioplus 公开仓库 | 2026-03-08 |
-| 3 | GitHub Actions 部署 | 自动构建部署配置 | 2026-03-08 |
-| 4 | 网站上线 | GitHub Pages 托管 | 2026-03-08 |
-| 5 | 修复 logo 链接 | logo.png → logo.svg | 2026-03-08 |
-| 6 | 新增科普文章 | 6篇入门科普文章 | 2026-03-08 |
-| 7 | 配置本地搜索 | MkDocs Material 内置搜索 | 2026-03-08 |
-| 8 | 配置 Google Analytics | 配置预留 | 2026-03-08 |
-| 9 | 新增神经退化疾病板块 | 阿尔茨海默症、健忘症 | 2026-03-08 |
-| 10 | 新增心血管疾病板块 | 高血压中西医治疗 | 2026-03-08 |
-| 11 | 新增感官功能障碍板块 | 失明治疗、脑机接口 | 2026-03-08 |
-| 12 | 新增英文版本 | 完整翻译 31 篇文章 | 2026-03-09 |
-| 13 | 新增龟病防治板块 | 细菌性疾病、病毒性疾病等 6 大类 24 种疾病 | 2026-03-09 |
-| 14 | 添加语言切换按钮 | 中英文版本切换功能 | 2026-03-09 |
-| 15 | 创建项目工作规范 | PROJECT_GUIDE.md 规范文档 | 2026-03-09 |
-| 16 | 清理引用格式 | 移除 Z-Library，规范化引用格式 | 2026-03-09 |
-
----
-
-## 待完善任务
-
-### 短期任务（1个月内）
-
-| 序号 | 任务 | 说明 | 状态 | 费用 |
-|------|------|------|------|------|
-| 1 | 完善核心内容 | 填充研究领域的详细内容 | 待完成 | 免费 |
-| 2 | 添加研究组信息 | 整理国内外研究团队资料 | 待完成 | 免费 |
-| 3 | 更新成果转化 | 添加最新转化案例 | 待完成 | 免费 |
-| 4 | 购买域名 | 建议 ~¥50/年或使用免费 .github.io 域名 | 可选 | 可选 |
-| 5 | 配置自定义域名 | 购买域名后配置 DNS 解析 | 可选 | 可选 |
-| 6 | 配置 Google Analytics | 注册并配置跟踪 ID | 待完成 | 免费 |
-
-### 中期任务（1-3个月）
-
-| 序号 | 任务 | 说明 | 状态 | 费用 |
-|------|------|------|------|------|
-| 7 | SEO 优化 | 搜索引擎优化 | 待完成 | 免费 |
-| 8 | 社交媒体运营 | 微信公众号等 | 待完成 | 免费 |
-| 9 | 添加更多研究领域 | 根据需求扩展 | 待完成 | 免费 |
-
-### 长期任务（3个月以上）
-
-| 序号 | 任务 | 说明 | 状态 | 费用 |
-|------|------|------|------|------|
-| 10 | 申请 Google AdSense | 广告变现 | 待完成 | 免费（需审核） |
-| 11 | 推出付费内容 | 课程/报告 | 待完成 | 收入 |
-| 12 | 商业合作 | 机构赞助 | 待完成 | 收入 |
+- 线上地址: [https://sulfolobus.github.io/bioplus/](https://sulfolobus.github.io/bioplus/)
+- 英文地址: [https://sulfolobus.github.io/bioplus/en/](https://sulfolobus.github.io/bioplus/en/)
+- GitHub 仓库: [https://github.com/sulfolobus/bioplus](https://github.com/sulfolobus/bioplus)
+- 运行状态: 已上线、自动化部署正常
+- 站点语言: 中文 + English
+- 文档版本: 2.0（基于当前目录与导航实况）
+- 最近更新: 2026-04-05
 
 ---
 
 ## 一、项目概述
 
-**项目名称**: BioPlus（生-plus）
-**项目定位**: 生命科学实践应用科普平台
-**技术栈**: MkDocs + Material 主题
-**托管平台**: GitHub Pages（已部署）
+### 1.1 项目定位
+
+BioPlus 是一个生命科学实践应用平台，覆盖科研应用、疾病专题、科普内容与分层学习资源。
+
+### 1.2 当前信息架构
+
+当前站点已形成三层结构：
+
+1. 研究领域（Research Areas）
+2. 学习资源（Learning Resources）
+3. 传统中医/中医经典（Traditional Chinese Medicine）
+
+### 1.3 当前学习资源体系（新增后）
+
+学习资源已扩展为 3 个专题入口：
+
+1. 高中生物学知识（教材分册 + 章节）
+2. 生物学竞赛知识（按学科）
+3. 高等教育中的生命科学（按宏观到微观学科路径）
 
 ---
 
-## 二、技术方案（支持大型内容）
+## 二、技术架构与配置
 
-### 推荐方案：MkDocs + GitHub Pages
+### 2.1 核心技术栈
 
-| 功能 | 方案 | 费用 |
-|------|------|------|
-| 框架 | MkDocs + Material | 免费 |
-| 托管 | GitHub Pages | 免费 |
-| 搜索 | Algolia DocSearch（申请免费） | 免费 |
-| 统计 | Google Analytics | 免费 |
-| 邮件订阅 | ConvertKit 免费版 | 免费 |
-| 支付/会员 | Stripe（可选） | 手续费 |
+- 文档框架: MkDocs
+- 主题: Material for MkDocs
+- 构建插件: mkdocs-minify-plugin
+- 托管: GitHub Pages
+- CI/CD: GitHub Actions
 
-> **说明**：当前使用 MkDocs 方案，与原 Docusaurus 方案功能等价，且更轻量、更易维护。
+### 2.2 双配置构建模型
 
----
+- 中文配置: `mkdocs.yml`
+- 英文配置: `mkdocs-en.yml`
 
-## 三、具体实施计划（已完成）
+双配置分别构建，再合并为同一 Pages 产物目录。
 
-> 注：以下为原始计划，实际已完成情况见"已完成任务"部分。
+### 2.3 主题覆写与评论系统
 
-### 阶段一：Week 1（1-7天）- 基础搭建 ✅
+- 主题覆写目录: `overrides/`
+- 覆写文件: `overrides/main.html`
+- 评论系统: Giscus（GitHub Discussions）
 
-- 选名、搭建框架、确定分类结构 ✅
-- 配置网站主题和导航 ✅
-- 创建项目文档 ✅
+当前 Giscus 关键参数：
 
-### 阶段二：Week 2（8-14天）- 内容填充 ✅
+- repo: `sulfolobus/bioplus`
+- repo_id: `R_kgDORhh8mw`
+- category: `Ideas`
+- category_id: `DIC_kwDORhh8m84C6FeG`
+- mapping: `pathname`
 
-- 填充核心内容（20-30个研究话题）✅
-- 完善4个研究领域：基因编辑应用、医学诊断、药物研发、生物技术 ✅
+实现方式：
 
-### 阶段三：Week 3（15-21天）- 功能完善 ✅
-
-- 添加搜索功能（本地搜索已配置）✅
-- 研究组页面完善 ✅
-- 新增神经、心血管、感官板块 ✅
-
-### 阶段四：Week 4（22-30天）- 上线准备 ✅
-
-- 测试、调试 ✅
-- 盈利功能集成（预留配置）✅
-- 正式上线 ✅
+1. 通过 `overrides/main.html` 在所有非首页页面自动注入评论区。
+2. 页面可通过 Front Matter 设置 `comments: false` 禁用评论区。
+3. 新增页面默认自动继承评论区逻辑。
 
 ---
 
-## 四、项目结构
+## 三、部署与发布流程
 
-```
+### 3.1 自动部署触发
+
+- 触发条件: push 到 `main`
+- 工作流文件: `.github/workflows/deploy.yml`
+
+### 3.2 工作流步骤
+
+1. Checkout
+2. Setup Python 3.11
+3. 安装 MkDocs 依赖
+4. 构建中文站点（输出临时 `site_zh`）
+5. 构建英文站点（输出临时 `site_en`）
+6. 合并产物到 `site/`
+7. Upload Pages artifact
+8. Deploy to GitHub Pages
+
+### 3.3 发布时效
+
+通常推送后 1-2 分钟可完成上线。
+
+---
+
+## 四、当前目录结构（实况）
+
+### 4.1 仓库根目录
+
+```text
 bioplus/
-├── mkdocs.yml              # 网站配置文件
-├── .gitignore              # Git 忽略文件
-├── .github/
-│   └── workflows/
-│       └── deploy.yml      # GitHub Actions 自动部署配置
-├── .venv/                  # Python 虚拟环境（本地开发用）
-└── docs/
-    ├── index.md            # 首页（中文）
-    ├── about.md            # 关于我们（中文）
-    ├── PROJECT_DOC.md      # 项目技术文档
-    ├── assets/
-    │   ├── logo.svg        # 网站 Logo
-    │   └── anti-copy.js   # 反复制脚本
-    ├── hooks/
-    │   └── custom_footer.py # 自定义页脚
-    ├── robots.txt          # 搜索引擎配置
-    │
-    ├── 科普文章/           # 科普文章板块（中文）
-    │   ├── index.md
-    │   ├── 基因是什么.md
-    │   ├── DNA工作原理.md
-    │   ├── 蛋白质功能.md
-    │   ├── CRISPR故事.md
-    │   ├── 免疫系统.md
-    │   └── 癌症原理.md
-    │
-    ├── 研究组/             # 研究组介绍（中文）
-    │   └── index.md
-    │
-    ├── 成果转化/           # 成果转化展示（中文）
-    │   └── index.md
-    │
-    ├── 基因编辑应用/        # 研究领域 1（中文）
-    │   ├── index.md
-    │   ├── CRISPR临床.md
-    │   └── 基因治疗.md
-    │
-    ├── 医学诊断/           # 研究领域 2（中文）
-    │   ├── index.md
-    │   ├── 液体活检.md
-    │   └── AI诊断.md
-    │
-    ├── 药物研发/           # 研究领域 3（中文）
-    │   ├── index.md
-    │   ├── 抗体药物.md
-    │   └── AI制药.md
-    │
-    ├── 生物技术/           # 研究领域 4（中文）
-    │   ├── index.md
-    │   ├── 合成生物学.md
-    │   └── 细胞治疗.md
-    │
-    ├── 神经退化疾病/       # 研究领域 5（中文）
-    │   ├── index.md
-    │   ├── 阿尔茨海默症.md
-    │   └── 健忘症.md
-    │
-    ├── 心血管疾病/         # 研究领域 6（中文）
-    │   ├── index.md
-    │   └── 高血压.md
-    │
-    ├── 感官功能障碍/       # 研究领域 7（中文）
-    │   ├── index.md
-    │   ├── 失明治疗.md
-    │   └── 脑机接口.md
-    │
-    ├── 龟病防治/            # 研究领域 8（中文）
-    │   ├── index.md
-    │   ├── 龟病综合防治.md
-    │   ├── 常见龟病诊断.md
-    │   ├── 龟类营养指南.md
-    │   ├── 细菌性疾病/
-    │   │   ├── 肺炎.md
-    │   │   ├── 肠胃炎.md
-    │   │   ├── 败血症.md
-    │   │   ├── 腐甲病.md
-    │   │   ├── 腐皮病.md
-    │   │   └── 眼病.md
-    │   ├── 病毒性疾病/
-    │   │   ├── 疱疹病毒病.md
-    │   │   ├── 腺病毒病.md
-    │   │   └── 虹彩病毒病.md
-    │   ├── 真菌性疾病/
-    │   │   ├── 真菌性皮炎.md
-    │   │   └── 甲壳真菌病.md
-    │   ├── 体内寄生虫/
-    │   │   ├── 蛔虫病.md
-    │   │   ├── 绦虫病.md
-    │   │   ├── 血液寄生虫病.md
-    │   │   └── 原虫病.md
-    │   ├── 体外寄生虫/
-    │   │   ├── 蜱虫病.md
-    │   │   └── 螨虫病.md
-    │   └── 其他疾病/
-    │       ├── 软壳病.md
-    │       ├── 肥胖症.md
-    │       ├── 痛风.md
-    │       ├── 膀胱结石.md
-    │       ├── 中暑.md
-    │       └── 冻伤.md
-    |
-    # ==================== 英文版 ====================
-    ├── en/                  # 英文版本根目录
-    │   ├── index.md        # 首页（English）
-    │   ├── about.md        # 关于我们（English）
-    │   ├── gene-editing/
-    │   │   ├── index.md
-    │   │   ├── CRISPR-clinical.md
-    │   │   └── gene-therapy.md
-    │   ├── medical-diagnosis/
-    │   │   ├── index.md
-    │   │   ├── liquid-biopsy.md
-    │   │   └── AI-diagnosis.md
-    │   ├── drug-development/
-    │   │   ├── index.md
-    │   │   ├── antibody-drugs.md
-    │   │   └── AI-pharmaceuticals.md
-    │   ├── biotechnology/
-    │   │   ├── index.md
-    │   │   ├── synthetic-biology.md
-    │   │   └── cell-therapy.md
-    │   ├── neurodegenerative-diseases/
-    │   │   ├── index.md
-    │   │   ├── alzheimer.md
-    │   │   └── amnesia.md
-    │   ├── cardiovascular-diseases/
-    │   │   ├── index.md
-    │   │   └── hypertension.md
-    │   ├── sensory-dysfunction/
-    │   │   ├── index.md
-    │   │   ├── blindness-treatment.md
-    │   │   └── brain-machine-interface.md
-    │   ├── turtle-disease/
-    │   │   ├── index.md
-    │   │   ├── comprehensive-treatment.md
-    │   │   ├── common-diagnosis.md
-    │   │   ├── turtle-nutrition.md
-    │   │   ├── bacterial/
-    │   │   │   ├── pneumonia.md
-    │   │   │   ├── gastroenteritis.md
-    │   │   │   ├── septicemia.md
-    │   │   │   ├── shell-rot.md
-    │   │   │   ├── skin-rot.md
-    │   │   │   └── eye-disease.md
-    │   │   ├── viral/
-    │   │   │   ├── herpesvirus.md
-    │   │   │   ├── adenovirus.md
-    │   │   │   └── iridovirus.md
-    │   │   ├── fungal/
-    │   │   │   ├── dermatitis.md
-    │   │   │   └── shell-fungus.md
-    │   │   ├── parasites/
-    │   │   │   ├── roundworms.md
-    │   │   │   ├── tapeworms.md
-    │   │   │   ├── blood-parasites.md
-    │   │   │   ├── protozoa.md
-    │   │   │   ├── ticks.md
-    │   │   │   └── mites.md
-    │   │   └── other/
-    │   │       ├── soft-shell.md
-    │   │       ├── obesity.md
-    │   │       ├── gout.md
-    │   │       ├── bladder-stones.md
-    │   │       ├── heat-stroke.md
-    │   │       └── frostbite.md
-    │   ├── research-groups/
-    │   │   └── index.md
-    │   ├── achievements/
-    │   │   └── index.md
-    │   └── popular-science/
-    │       ├── index.md
-    │       ├── what-is-gene.md
-    │       ├── how-dna-works.md
-    │       ├── protein-functions.md
-    │       ├── crispr-story.md
-    │       ├── immune-system.md
-    │       └── cancer-basics.md
+├── .github/workflows/deploy.yml
+├── .venv/
+├── docs/
+├── overrides/
+├── site/
+├── turtle-knowledge-base/
+├── create_en_pages.py
+├── extract_turtle_docs.py
+├── fix_references.py
+├── mkdocs.yml
+└── mkdocs-en.yml
 ```
 
-### 内容统计
+### 4.2 中文内容根目录（`docs/`）
 
-| 板块 | 中文文章数 | 英文文章数 |
-|------|-----------|-----------|
-| 首页/关于 | 2 篇 | 2 篇 |
-| 科普文章 | 7 篇 | 7 篇 |
-| 研究组 | 1 篇 | 1 篇 |
-| 成果转化 | 1 篇 | 1 篇 |
-| 基因编辑应用 | 3 篇 | 3 篇 |
-| 医学诊断 | 3 篇 | 3 篇 |
-| 药物研发 | 3 篇 | 3 篇 |
-| 生物技术 | 3 篇 | 3 篇 |
-| 神经退化疾病 | 3 篇 | 3 篇 |
-| 心血管疾病 | 2 篇 | 2 篇 |
-| 感官功能障碍 | 3 篇 | 3 篇 |
-| 龟病防治 | 27 篇 | 27 篇 |
-| **总计** | **58 篇** | **58 篇** |
+关键目录与文件：
+
+- `index.md`、`about.md`
+- `PROJECT_DOC.md`、`PROJECT_GUIDE.md`
+- `assets/`、`hooks/`、`robots.txt`
+- `research-groups/`、`achievements/`
+- `科普文章/`
+- 研究领域专题:
+  - `基因编辑应用/`
+  - `医学诊断/`
+  - `药物研发/`
+  - `生物技术/`
+  - `神经退化疾病/`
+  - `心血管疾病/`
+  - `感官功能障碍/`
+  - `龟病防治/`
+- 学习资源专题:
+  - `高中生物学知识/`
+  - `生物学竞赛知识/`
+  - `高等教育生命科学/`
+- `中医经典/`
+
+### 4.3 英文内容根目录（`docs/en/`）
+
+关键目录与文件：
+
+- `index.md`、`about.md`
+- `PROJECT_DOC.md`、`PROJECT_GUIDE.md`
+- `research-groups/`、`achievements/`
+- `popular-science/`
+- 研究领域专题:
+  - `gene-editing/`
+  - `medical-diagnosis/`
+  - `drug-development/`
+  - `biotechnology/`
+  - `neurodegenerative-diseases/`
+  - `cardiovascular-diseases/`
+  - `sensory-dysfunction/`
+  - `turtle-disease/`
+- 学习资源专题:
+  - `high-school-biology/`
+  - `biology-competition/`
+  - `higher-education-life-sciences/`
+- `traditional-chinese-medicine/`
 
 ---
 
-## 五、如何本地预览
+## 五、导航与内容模块现状
 
-### 前置要求
+### 5.1 中文主导航（`mkdocs.yml`）
+
+当前已包含：
+
+1. 首页、关于我们、项目文档、工作规范
+2. 研究领域（8 大板块 + 细分子页）
+3. 研究组、成果转化、科普文章
+4. 学习资源（3 大专题）
+5. 中医经典
+
+### 5.2 英文主导航（`mkdocs-en.yml`）
+
+当前与中文保持结构镜像，包含：
+
+1. Home、About、Project Documentation、Project Guide
+2. Research Areas（8 大板块镜像）
+3. Research Groups、Achievements、Popular Science
+4. Learning Resources（3 大专题镜像）
+5. Traditional Chinese Medicine
+
+### 5.3 学习资源模块细节
+
+#### 高中生物学知识
+
+- 分册组织：必修一/二/三，选修一/二/三
+- 每册下含章节页
+- 中英文均已配置导航
+
+#### 生物学竞赛知识
+
+- 按学科组织
+- 已包括细胞、分子遗传、生物化学、动植物生理、生态、进化分类、实验方法、数据分析等
+- 中英文均已配置导航
+
+#### 高等教育中的生命科学（新增）
+
+- 按“宏观 -> 微观”路径组织
+- 覆盖导论、进化、生态、生理、神经、发育、细胞、微生物、遗传、分子、生化、结构、生信、计算、合成
+- 中英文镜像目录已接入
+
+---
+
+## 六、内容生产与辅助脚本
+
+### 6.1 `create_en_pages.py`
+
+用途：批量创建部分英文页面占位与翻译骨架（最初用于龟病相关）。
+
+### 6.2 `extract_turtle_docs.py`
+
+用途：从本地资料库提取 PDF/Word/Excel 文本，输出到 `turtle-knowledge-base/`。
+
+### 6.3 `fix_references.py`
+
+用途：批量修正规范化引用格式（主要针对龟病板块）。
+
+### 6.4 `turtle-knowledge-base/`
+
+用途：存放龟病板块的提取文本和中间资料，不直接作为站点页面发布。
+
+---
+
+## 七、本地开发与预览
+
+### 7.1 环境要求
 
 - Python 3.9+
 - MkDocs
 - mkdocs-material
 - mkdocs-minify-plugin
 
-### 安装依赖
-
-```bash
-# 创建虚拟环境（推荐）
-python3 -m venv .venv
-
-# 激活虚拟环境
-source .venv/bin/activate
-
-# 安装 MkDocs 和主题
-pip install mkdocs mkdocs-material
-
-# 安装插件（可选）
-pip install mkdocs-minify-plugin
-```
-
-### 启动预览服务器
+### 7.2 本地预览命令
 
 ```bash
 cd /Users/wy/Documents/bioplus
-
-# 激活虚拟环境
 source .venv/bin/activate
-
-# 启动本地服务器
 python3 -m mkdocs serve
-
-# 或指定端口
-python3 -m mkdocs serve --dev-addr 127.0.0.1:8000
 ```
 
-### 访问预览
+默认访问：`http://127.0.0.1:8000/`
 
-浏览器打开：http://127.0.0.1:8000/
-
----
-
-## 六、上线部署（已自动化）
-
-### GitHub Pages 部署（当前方案）
-
-项目已配置 GitHub Actions 自动部署，每次推送到 main 分支会自动构建并部署。
-
-**自动部署流程**：
-
-```
-本地修改 → git commit → git push → GitHub Actions 自动构建 → 网站自动上线（约1-2分钟）
-```
-
-**如何更新网站内容**：
+### 7.3 单独构建命令
 
 ```bash
-# 1. 进入项目目录
-cd /Users/wy/Documents/bioplus
+# 中文
+mkdocs build -f mkdocs.yml
 
-# 2. 提交所有修改
-git add .
-git commit -m "更新内容描述"
-
-# 3. 推送到 GitHub（自动触发部署）
-git push
-```
-
-**部署说明**：
-- 无需手动构建和部署
-- 每次 push 后约 1-2 分钟自动完成
-- 可在 GitHub 仓库的 Actions 页面查看部署状态
-
-**访问网站**：
-
-- URL: https://sulfolobus.github.io/bioplus/
-
----
-
-### 绑定自定义域名（可选）
-
-1. 购买域名（如阿里云、腾讯云）
-2. 在 GitHub 仓库设置中添加域名
-3. 配置 DNS 解析
-
-| DNS 类型 | 值 |
-|----------|-----|
-| CNAME | sulfolobus.github.io |
-
----
-
-## 七、盈利模式
-
-### 当前阶段（内容积累期）
-
-- 目标：积累流量和内容
-- 任务：完善内容、建立品牌
-
-### 第一阶段：广告收入
-
-当月访问量达到一定规模后：
-
-1. 申请 Google AdSense
-2. 在网站中添加广告位
-3. 获取广告分成
-
-### 第二阶段：付费内容
-
-- 深度研究报告
-- 专家课程
-- 付费会员专区
-
-### 第三阶段：商业合作
-
-- 研究机构赞助
-- 企业科普合作
-- 联合活动
-
----
-
-## 八、后续任务
-
-### 短期任务（1个月内）
-
-| 序号 | 任务 | 说明 | 费用 |
-|------|------|------|------|
-| 1 | 完善核心内容 | 填充4个研究领域的详细内容 | 免费 |
-| 2 | 添加研究组信息 | 整理国内外研究团队资料 | 免费 |
-| 3 | 更新成果转化 | 添加最新转化案例 | 免费 |
-| 4 | 修复缺失链接 | 修复 logo.png 和科普文章链接警告 | 免费 |
-| 5 | 购买域名 | 建议 ~¥50/年或使用免费 .github.io 域名 | 可选 |
-| 6 | 配置自定义域名 | 购买域名后配置 DNS 解析 | 可选 |
-| 7 | 新增神经退化疾病板块 | 阿尔茨海默症、健忘症 | 免费 |
-| 8 | 新增心血管疾病板块 | 高血压中西医治疗 | 免费 |
-| 9 | 新增感官功能障碍板块 | 失明治疗、脑机接口 | 免费 |
-
-### 中期任务（1-3个月）
-
-| 序号 | 任务 | 说明 | 费用 |
-|------|------|------|------|
-| 6 | SEO 优化 | 搜索引擎优化 | 免费 |
-| 7 | 申请 Algolia 搜索 | 免费搜索服务 | 免费 |
-| 8 | Google Analytics | 流量分析 | 免费 |
-| 9 | 社交媒体运营 | 微信公众号等 | 免费 |
-
-### 长期任务（3个月以上）
-
-| 序号 | 任务 | 说明 | 费用 |
-|------|------|------|------|
-| 10 | 申请 Google AdSense | 广告变现 | 免费（需审核） |
-| 11 | 推出付费内容 | 课程/报告 | 收入 |
-| 12 | 商业合作 | 机构赞助 | 收入 |
-
----
-
-## 九、技术优化配置
-
-### 1. Google Analytics 流量统计
-
-**配置步骤**：
-1. 访问 https://analytics.google.com/
-2. 创建账号并获取跟踪 ID（格式：G-XXXXXXXXXX）
-3. 在 mkdocs.yml 中配置：
-
-```yaml
-extra:
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX  # 替换为你的跟踪 ID
-```
-
-**查看数据**：
-- 访问量
-- 访客来源
-- 页面浏览量
-- 用户地理位置
-- 设备类型
-
----
-
-### 2. SEO 搜索引擎优化
-
-#### 2.1 sitemap.xml（站点地图）
-
-MkDocs Material 自动生成站点地图，访问：
-```
-https://sulfolobus.github.io/bioplus/sitemap.xml
-```
-
-#### 2.2 robots.txt（搜索引擎配置）
-
-当前已配置 `docs/robots.txt`：
-
-```
-User-agent: *
-Allow: /
-Sitemap: https://sulfolobus.github.io/bioplus/sitemap.xml
-```
-
-#### 2.3 Meta 标签配置
-
-在 mkdocs.yml 中配置：
-
-```yaml
-meta:
-  tags:
-    - life science
-    - biotechnology
-    - popular science
-    - 基因编辑
-    - 生物技术
-```
-
-#### 2.4 Google Search Console
-
-1. 访问 https://search.google.com/search-console
-2. 添加域名：sulfolobus.github.io/bioplus
-3. 验证所有权（添加 HTML 标签或 DNS 记录）
-4. 提交站点地图
-
----
-
-### 3. 社交媒体分享配置
-
-#### Open Graph 标签
-
-在 mkdocs.yml 中添加：
-
-```yaml
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/sulfolobus/bioplus
-    - icon: fontawesome/brands/weixin
-      link: weixin://dl/chat?BioPlus  # 微信公众号二维码链接
-```
-
-#### Twitter Card
-
-```yaml
-extra:
-  speakerdeck:
-    id: your-presentation-id
+# 英文
+mkdocs build -f mkdocs-en.yml
 ```
 
 ---
 
-### 4. 网站性能优化
+## 八、运行与维护要点
 
-#### 4.1 图片优化
+### 8.1 双语同步原则
 
-- 使用 WebP 格式（比 PNG/JPG 小 30%）
-- 压缩图片：https://squoosh.app/
-- 避免使用过大的图片（建议 < 500KB）
+凡中文新增栏目或结构变动，应在英文镜像目录同步更新：
 
-#### 4.2 CDN 加速
+1. 目录
+2. 页面
+3. 导航
+4. 首页入口
 
-GitHub Pages 自带 Cloudflare CDN，全球访问速度有保障。
+### 8.2 配置一致性原则
 
-#### 4.3 缓存配置
+`mkdocs.yml` 与 `mkdocs-en.yml` 需同步关注：
 
-在 `docs/.nojekyll` 文件中配置缓存策略。
+- 主题功能
+- 插件
+- 评论参数
+- 分析参数
+- 语言切换
 
----
+### 8.3 评论系统维护
 
-### 5. 安全配置
-
-#### 5.1 HTTPS
-
-GitHub Pages 自动提供 HTTPS，无需额外配置。
-
-#### 5.2 Content Security Policy
-
-在 mkdocs.yml 中可添加：
-
-```yaml
-extra:
-  csp:
-    script-src: "'self' 'unsafe-inline'"
-    style-src: "'self' 'unsafe-inline'"
-```
+Giscus 参数统一放在 `extra.giscus`，不在单页重复硬编码。
 
 ---
 
-### 6. 备份与恢复
+## 九、已知风险与注意事项
 
-#### 6.1 自动备份
-
-代码已托管在 GitHub，每次提交都有完整历史。
-
-#### 6.2 手动备份
-
-```bash
-# 导出所有文件
-zip -r bioplus-backup-$(date +%Y%m%d).zip docs/ mkdocs.yml
-```
+1. 导航结构较大，YAML 缩进出错会导致构建失败。
+2. 中英目录命名规范不同（中文自然语言 vs 英文 kebab-case），维护时需防止路径错配。
+3. 大规模批量新增页面后，建议先本地构建再推送。
+4. 站点内容增长较快，建议定期更新项目文档与工作规范避免信息过时。
 
 ---
 
-## 十、后续优化建议（免费方案）
+## 十、后续建议
 
-### 1. 完善科普文章内容（免费）
+### 10.1 文档维护机制
 
-当前有缺失文章链接的警告，需要创建以下文章文件：
+- 每次新增一级栏目后，同步更新 `PROJECT_DOC.md` 与 `PROJECT_GUIDE.md`
+- 每月进行一次“导航-目录-文档”一致性巡检
 
-```
-docs/科普文章/
-├── index.md           # 已存在
-├── 基因是什么.md      # 需要创建
-├── DNA工作原理.md     # 需要创建
-├── 蛋白质功能.md      # 需要创建
-├── CRISPR故事.md      # 需要创建
-├── 免疫系统.md        # 需要创建
-└── 癌症原理.md        # 需要创建
-```
+### 10.2 内容质量机制
 
-同时需要修复 index.md 中的 logo.png 链接问题（当前是 logo.svg）。
+- 为学习资源栏目建立统一模板（章节、知识点、教材、课程、参考）
+- 为研究领域栏目建立统一证据链模板（机制、应用、证据、风险）
 
-### 2. 配置 Algolia 搜索（免费）
+### 10.3 运营与分析
 
-**申请步骤**：
-1. 访问 https://docsearch.algolia.com/apply/
-2. 使用 GitHub 账号登录
-3. 填写申请表单（需要 PUBLIC 仓库）
-4. 等待审核（通常 1-2 周）
-
-**替代方案**：MkDocs Material 自带本地搜索功能，无需配置。
-
-### 3. 添加 Google Analytics 统计（免费）
-
-在 mkdocs.yml 中添加：
-
-```yaml
-extra:
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX
-```
-
-需要先在 https://analytics.google.com/ 注册账号获取跟踪 ID。
-
-### 4. 购买自定义域名（可选）
-
-| 平台 | 价格 | 说明 |
-|------|------|------|
-| 阿里云 | ~¥50/年 | 常用域名 |
-| 腾讯云 | ~¥50/年 | 常用域名 |
-| Cloudflare Registrar | ~$10/年 | 隐私保护更好 |
-
-配置后可在 GitHub 仓库 Settings → Pages 中添加自定义域名。
+- 补齐 Google Analytics 实际 Tracking ID
+- 增加基础 SEO 巡检流程（robots、sitemap、标题结构）
 
 ---
 
-## 十一、常用命令
+## 十一、相关文件索引
 
-```bash
-# 本地预览
-python3 -m mkdocs serve
-
-# 构建静态网站
-python3 -m mkdocs build
-
-# 查看帮助
-python3 -m mkdocs --help
-```
+- 项目技术文档: `docs/PROJECT_DOC.md`
+- 工作规范: `docs/PROJECT_GUIDE.md`
+- 中文配置: `mkdocs.yml`
+- 英文配置: `mkdocs-en.yml`
+- 主题覆写: `overrides/main.html`
+- 自动部署: `.github/workflows/deploy.yml`
 
 ---
 
-## 十二、注意事项
+## 文档更新时间
 
-1. **内容写作**：使用 Markdown 格式，位于 `docs/` 目录
-2. **图片放置**：图片放在 `docs/assets/` 目录
-3. **中文支持**：MkDocs Material 主题原生支持中文
-4. **更新配置**：修改 `mkdocs.yml` 后需要重启服务
-5. **更新网站**：每次修改后执行 `git add . && git commit && git push`
-
----
-
-## 十三、相关资源
-
-- MkDocs 文档：https://www.mkdocs.org/
-- Material 主题：https://squidfunk.github.io/mkdocs-material/
-- GitHub：https://github.com/sulfolobus/bioplus
-- GitHub Actions：https://docs.github.com/en/actions
-- Google Analytics：https://analytics.google.com/
-- Google Search Console：https://search.google.com/search-console
-
----
-
-*文档更新时间：2026-03-09*
+2026-04-05

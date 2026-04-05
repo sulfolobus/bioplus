@@ -23,7 +23,7 @@ theme:
 
 plugins:
   - search:
-      prebuild_index: true
+      # Option removed for compatibility
   - minify:
       minify_html: true
 
