@@ -218,7 +218,17 @@ nav:
               - Chapter 3 Embryo Engineering and Reproductive Technology: high-school-biology/elective-3/chapter-3-embryo-engineering.md
               - Chapter 4 Biosafety and Technology Assessment: high-school-biology/elective-3/chapter-4-biosafety-assessment.md
               - Chapter 5 Integrated Biotech Applications: high-school-biology/elective-3/chapter-5-integrated-biotech-applications.md
-      - Biology Olympiad: biology-competition/index.md
+            - Biology Olympiad:
+                    - Overview: en/biology-competition/index.md
+                    - Cell Biology: en/biology-competition/cell-biology.md
+                    - Molecular Genetics: en/biology-competition/molecular-genetics.md
+                    - Biochemistry: en/biology-competition/biochemistry.md
+                    - Animal Physiology: en/biology-competition/animal-physiology.md
+                    - Plant Physiology: en/biology-competition/plant-physiology.md
+                    - Ecology: en/biology-competition/ecology.md
+                    - Evolution and Classification: en/biology-competition/evolution-and-classification.md
+                    - Biotechnology and Experimental Methods: en/biology-competition/biotechnology-and-experimental-methods.md
+                    - Data Analysis and Research Methods: en/biology-competition/data-analysis-and-research-methods.md
   - Traditional Chinese Medicine:
       - traditional-chinese-medicine/index.md
       - traditional-chinese-medicine/huangdi-neijing.md
