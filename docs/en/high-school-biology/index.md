@@ -1,30 +1,37 @@
 # High School Biology
 
-This section organizes the core concepts, lab ideas, and common problem types used in high school biology study.
+This section is structured for beginners and exam-oriented learning.
 
-## Focus Areas
+## Textbook Navigation
 
-- Cell structure and function
-- Genetics and variation
-- Metabolism and energy transfer
-- Homeostasis and regulation
-- Ecosystems and environment
-- Experimental design and data analysis
+- [Compulsory 1: Molecules and Cells](compulsory-1.md)
+- [Compulsory 2: Genetics and Evolution](compulsory-2.md)
+- [Compulsory 3: Homeostasis and Environment](compulsory-3.md)
+- [Elective 1: Biotechnology Practice](elective-1.md)
+- [Elective 2: Biology, Science, and Society](elective-2.md)
+- [Elective 3: Modern Biotechnology Topics](elective-3.md)
 
 ## Learning Path
 
-### 1. Build a concept map first
+### Stage 1: Build the foundation
 
-Connect the key terms, diagrams, and definitions from the textbook before trying to memorize details.
+Start with Compulsory 1 and master cell structure, transport, respiration, and photosynthesis.
 
-### 2. Group common problem types
+### Stage 2: Build genetics logic
 
-Separate multiple-choice, experimental, chart-based, and comprehensive questions so you can reuse a clear solving process.
+Use Compulsory 2 to connect meiosis, inheritance, gene expression, and evolution.
 
-### 3. Return to experiments and applications
+### Stage 3: Build system thinking
 
-Use real-world contexts to understand the principles and practice explaining evidence from observation to conclusion.
+Use Compulsory 3 to move from individual regulation to ecosystem-level analysis.
 
-## Next Step
+### Stage 4: Extend with electives
 
-This section will grow together with the English site content.
+Use elective modules to strengthen experiment design, argumentation, and integrated biotech understanding.
+
+## Weekly Routine
+
+- Mon-Wed: New chapter learning
+- Thu: Mistake review and concept map update
+- Fri: Data/experiment problem training
+- Weekend: Unit quiz and correction log

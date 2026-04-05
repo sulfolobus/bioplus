@@ -170,7 +170,54 @@ nav:
   - Achievements: achievements/index.md
   - Popular Science: popular-science/index.md
   - Learning Resources:
-      - High School Biology: high-school-biology/index.md
+      - High School Biology:
+          - high-school-biology/index.md
+          - Compulsory 1 Molecules and Cells:
+              - high-school-biology/compulsory-1.md
+              - Chapter 1 Introduction to Cells: high-school-biology/compulsory-1/chapter-1-introduction-to-cells.md
+              - Chapter 2 Biomolecules in Cells: high-school-biology/compulsory-1/chapter-2-biomolecules.md
+              - Chapter 3 Basic Cell Structure: high-school-biology/compulsory-1/chapter-3-cell-structure.md
+              - Chapter 4 Transport Across the Membrane: high-school-biology/compulsory-1/chapter-4-membrane-transport.md
+              - Chapter 5 Energy Supply and Use: high-school-biology/compulsory-1/chapter-5-energy-and-metabolism.md
+              - Chapter 6 Cell Life Cycle: high-school-biology/compulsory-1/chapter-6-cell-life-cycle.md
+          - Compulsory 2 Genetics and Evolution:
+              - high-school-biology/compulsory-2.md
+              - Chapter 1 Mendelian Genetics: high-school-biology/compulsory-2/chapter-1-mendelian-genetics.md
+              - Chapter 2 Genes and Chromosomes: high-school-biology/compulsory-2/chapter-2-genes-and-chromosomes.md
+              - Chapter 3 The Nature of the Gene: high-school-biology/compulsory-2/chapter-3-nature-of-gene.md
+              - Chapter 4 Gene Expression: high-school-biology/compulsory-2/chapter-4-gene-expression.md
+              - Chapter 5 Mutation and Variation: high-school-biology/compulsory-2/chapter-5-mutation-and-variation.md
+              - Chapter 6 Breeding and Genetic Engineering: high-school-biology/compulsory-2/chapter-6-breeding-and-genetic-engineering.md
+              - Chapter 7 Modern Evolution Theory: high-school-biology/compulsory-2/chapter-7-modern-evolution-theory.md
+          - Compulsory 3 Homeostasis and Environment:
+              - high-school-biology/compulsory-3.md
+              - Chapter 1 Internal Environment and Homeostasis: high-school-biology/compulsory-3/chapter-1-internal-environment-homeostasis.md
+              - Chapter 2 Regulation in Animals and Humans: high-school-biology/compulsory-3/chapter-2-regulation-in-animals.md
+              - Chapter 3 Plant Hormone Regulation: high-school-biology/compulsory-3/chapter-3-plant-hormone-regulation.md
+              - Chapter 4 Population and Community: high-school-biology/compulsory-3/chapter-4-population-and-community.md
+              - Chapter 5 Ecosystem and Stability: high-school-biology/compulsory-3/chapter-5-ecosystem-stability.md
+              - Chapter 6 Environmental Protection: high-school-biology/compulsory-3/chapter-6-environmental-protection.md
+          - Elective 1 Biotechnology Practice:
+              - high-school-biology/elective-1.md
+              - Chapter 1 Fermentation Basics: high-school-biology/elective-1/chapter-1-fermentation-basics.md
+              - Chapter 2 Microbial Culture and Isolation: high-school-biology/elective-1/chapter-2-microbial-culture.md
+              - Chapter 3 Plant Tissue Culture: high-school-biology/elective-1/chapter-3-plant-tissue-culture.md
+              - Chapter 4 Enzyme Engineering and Immobilization: high-school-biology/elective-1/chapter-4-enzyme-engineering.md
+              - Chapter 5 Integrated Biotech Practice: high-school-biology/elective-1/chapter-5-biotech-practice-integration.md
+          - Elective 2 Biology Science and Society:
+              - high-school-biology/elective-2.md
+              - Chapter 1 Biotechnology and Social Development: high-school-biology/elective-2/chapter-1-biotechnology-and-society.md
+              - Chapter 2 Bioethics and Regulation: high-school-biology/elective-2/chapter-2-bioethics-and-regulation.md
+              - Chapter 3 Public Health and Personal Health: high-school-biology/elective-2/chapter-3-public-health.md
+              - Chapter 4 Biodiversity and Sustainability: high-school-biology/elective-2/chapter-4-biodiversity-and-sustainability.md
+              - Chapter 5 Scientific Argumentation Training: high-school-biology/elective-2/chapter-5-scientific-argumentation.md
+          - Elective 3 Modern Biotechnology Topics:
+              - high-school-biology/elective-3.md
+              - Chapter 1 Genetic Engineering Basics: high-school-biology/elective-3/chapter-1-genetic-engineering.md
+              - Chapter 2 Cell Engineering: high-school-biology/elective-3/chapter-2-cell-engineering.md
+              - Chapter 3 Embryo Engineering and Reproductive Technology: high-school-biology/elective-3/chapter-3-embryo-engineering.md
+              - Chapter 4 Biosafety and Technology Assessment: high-school-biology/elective-3/chapter-4-biosafety-assessment.md
+              - Chapter 5 Integrated Biotech Applications: high-school-biology/elective-3/chapter-5-integrated-biotech-applications.md
       - Biology Olympiad: biology-competition/index.md
   - Traditional Chinese Medicine:
       - traditional-chinese-medicine/index.md
