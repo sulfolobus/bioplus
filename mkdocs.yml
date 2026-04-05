@@ -9,16 +9,17 @@ repo_name: sulfolobus/bioplus
 copyright: Copyright &copy; 2026 BioPlus
 
 theme:
-  name: material
-  language: zh
-  palette:
-    primary: teal
-    accent: teal
-  features:
-    - navigation.instant
-    - navigation.tabs
-    - search.suggest
-    - search.highlight
+    name: material
+    custom_dir: docs/overrides
+    language: zh
+    palette:
+        primary: teal
+        accent: teal
+    features:
+        - navigation.instant
+        - navigation.tabs
+        - search.suggest
+        - search.highlight
 
 plugins:
   - search:
@@ -27,6 +28,19 @@ plugins:
       minify_html: true
 
 extra:
+    giscus:
+        repo: sulfolobus/bioplus
+        repo_id: "R_kgDORhh8mw"
+        category: Ideas
+        category_id: "DIC_kwDORhh8m84C6FeG"
+        mapping: pathname
+        strict: "0"
+        reactions_enabled: "1"
+        emit_metadata: "1"
+        input_position: top
+        theme: preferred_color_scheme
+        lang: zh-CN
+        loading: lazy
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/sulfolobus/bioplus

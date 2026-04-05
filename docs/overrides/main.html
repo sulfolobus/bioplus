@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+
+  {% set g = config.extra.get('giscus', {}) %}
+  {% set repo = g.get('repo', '') %}
+  {% set repo_id = g.get('repo_id', '') %}
+  {% set category = g.get('category', '') %}
+  {% set category_id = g.get('category_id', '') %}
+  {% set configured = repo and category and repo_id and category_id and 'REPLACE_WITH' not in repo_id and 'REPLACE_WITH' not in category_id %}
+
+  {% if not page.is_homepage and not page.meta.get('comments') == false %}
+    <section class="md-content__inner" id="comments" style="margin-top:2rem;">
+      <h2>{% if config.theme.language == 'zh' %}评论区{% else %}Comments{% endif %}</h2>
+
+      {% if configured %}
+        <script src="https://giscus.app/client.js"
+                data-repo="{{ repo }}"
+                data-repo-id="{{ repo_id }}"
+                data-category="{{ category }}"
+                data-category-id="{{ category_id }}"
+                data-mapping="{{ g.get('mapping', 'pathname') }}"
+                data-strict="{{ g.get('strict', '0') }}"
+                data-reactions-enabled="{{ g.get('reactions_enabled', '1') }}"
+                data-emit-metadata="{{ g.get('emit_metadata', '0') }}"
+                data-input-position="{{ g.get('input_position', 'top') }}"
+                data-theme="{{ g.get('theme', 'preferred_color_scheme') }}"
+                data-lang="{{ g.get('lang', 'zh-CN' if config.theme.language == 'zh' else 'en') }}"
+                data-loading="{{ g.get('loading', 'lazy') }}"
+                crossorigin="anonymous"
+                async>
+        </script>
+      {% else %}
+        <p>
+          {% if config.theme.language == 'zh' %}
+            已启用 Giscus 模板。请在配置文件里填入 <code>repo_id</code> 和 <code>category_id</code> 后即可生效。
+          {% else %}
+            Giscus template is enabled. Fill <code>repo_id</code> and <code>category_id</code> in config to activate comments.
+          {% endif %}
+        </p>
+      {% endif %}
+    </section>
+  {% endif %}
+{% endblock %}
