@@ -55,14 +55,20 @@ Start here if you want a more focused path, whether you are building a school-le
 <div class="grid cards" markdown>
 
 -   :material-school: **High School Biology**
-  ---
-  A structured overview of core concepts and common problem types for high school biology study.
-  [:material-arrow-right: Enter topic](high-school-biology/index.md)
+
+    ---
+
+    A structured overview of core concepts and common problem types for high school biology study.
+
+    [:material-arrow-right: Enter topic](high-school-biology/index.md)
 
 -   :material-trophy: **Biology Olympiad**
-  ---
-  Topic-based review, thinking exercises, and advanced reading for systematic competition preparation.
-  [:material-arrow-right: Enter topic](biology-competition/index.md)
+
+    ---
+
+    Topic-based review, thinking exercises, and advanced reading for systematic competition preparation.
+
+    [:material-arrow-right: Enter topic](biology-competition/index.md)
 
 </div>
 
