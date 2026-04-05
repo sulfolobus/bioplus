@@ -50,7 +50,7 @@ Explore revolutionary biotechnology including synthetic biology and cell therapy
 
 ## Learning Resources
 
-Start here if you want a more focused path, whether you are building a school-level foundation or preparing for competition training.
+Start here if you want a more focused path, whether you are building school foundations, preparing for competition training, or moving into university-level life sciences.
 
 <div class="grid cards" markdown>
 
@@ -69,6 +69,14 @@ Start here if you want a more focused path, whether you are building a school-le
     Topic-based review, thinking exercises, and advanced reading for systematic competition preparation.
 
     [:material-arrow-right: Enter topic](biology-competition/index.md)
+
+-   :material-book-open-page-variant: **Life Sciences in Higher Education**
+
+    ---
+
+    A macro-to-micro university-level path with core subject maps, key topics, and public textbook/course links.
+
+    [:material-arrow-right: Enter topic](higher-education-life-sciences/index.md)
 
 </div>
 

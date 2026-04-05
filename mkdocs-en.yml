@@ -229,6 +229,23 @@ nav:
           - Evolution and Classification: biology-competition/evolution-and-classification.md
           - Biotechnology and Experimental Methods: biology-competition/biotechnology-and-experimental-methods.md
           - Data Analysis and Research Methods: biology-competition/data-analysis-and-research-methods.md
+      - Life Sciences in Higher Education:
+          - Overview: higher-education-life-sciences/index.md
+          - Introduction to Life Sciences: higher-education-life-sciences/introduction-to-life-sciences.md
+          - Evolutionary Biology: higher-education-life-sciences/evolutionary-biology.md
+          - Ecology: higher-education-life-sciences/ecology.md
+          - Physiology: higher-education-life-sciences/physiology.md
+          - Neurobiology: higher-education-life-sciences/neurobiology.md
+          - Developmental Biology: higher-education-life-sciences/developmental-biology.md
+          - Cell Biology: higher-education-life-sciences/cell-biology.md
+          - Microbiology: higher-education-life-sciences/microbiology.md
+          - Genetics: higher-education-life-sciences/genetics.md
+          - Molecular Biology: higher-education-life-sciences/molecular-biology.md
+          - Biochemistry: higher-education-life-sciences/biochemistry.md
+          - Structural Biology: higher-education-life-sciences/structural-biology.md
+          - Bioinformatics: higher-education-life-sciences/bioinformatics.md
+          - Computational Biology: higher-education-life-sciences/computational-biology.md
+          - Synthetic Biology: higher-education-life-sciences/synthetic-biology.md
   - Traditional Chinese Medicine:
       - traditional-chinese-medicine/index.md
       - traditional-chinese-medicine/huangdi-neijing.md
