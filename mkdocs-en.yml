@@ -10,7 +10,7 @@ copyright: Copyright &copy; 2026 BioPlus
 
 theme:
     name: material
-    custom_dir: ../overrides
+    custom_dir: overrides
     language: en
     palette:
         primary: teal
