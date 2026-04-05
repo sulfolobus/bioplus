@@ -12,13 +12,14 @@ This section is organized from macro-level systems to micro-level mechanisms and
 6. [Developmental Biology](developmental-biology.md)
 7. [Cell Biology](cell-biology.md)
 8. [Microbiology](microbiology.md)
-9. [Genetics](genetics.md)
-10. [Molecular Biology](molecular-biology.md)
-11. [Biochemistry](biochemistry.md)
-12. [Structural Biology](structural-biology.md)
-13. [Bioinformatics](bioinformatics.md)
-14. [Computational Biology](computational-biology.md)
-15. [Synthetic Biology](synthetic-biology.md)
+9. [Virology](virology.md)
+10. [Genetics](genetics.md)
+11. [Molecular Biology](molecular-biology.md)
+12. [Biochemistry](biochemistry.md)
+13. [Structural Biology](structural-biology.md)
+14. [Bioinformatics](bioinformatics.md)
+15. [Computational Biology](computational-biology.md)
+16. [Synthetic Biology](synthetic-biology.md)
 
 ## Public Resource Portals
 

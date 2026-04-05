@@ -2,7 +2,7 @@
 
 ![BioPlus](../assets/logo.svg)
 
-## <span id="greeting">Good morning</span>
+## <span id="greeting">Good morning</span> { #greeting-anchor }
 
 <script>
 (function() {
@@ -21,6 +21,12 @@
   }
   var el = document.getElementById("greeting");
   if (el) el.textContent = greeting;
+
+  // Update right-side TOC text as well
+  var tocEls = document.querySelectorAll("a[href='#greeting-anchor'], a[href='#greeting-anchor'] span");
+  tocEls.forEach(function(e) {
+    e.textContent = greeting;
+  });
 })();
 </script>
 

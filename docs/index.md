@@ -2,7 +2,7 @@
 
 ![BioPlus](assets/logo.svg)
 
-## <span id="greeting">早上好</span>
+## <span id="greeting">早上好</span> { #greeting-anchor }
 
 <script>
 (function() {
@@ -21,6 +21,12 @@
   }
   var el = document.getElementById("greeting");
   if (el) el.textContent = greeting;
+
+  // 同时更新右侧目录 (TOC) 中的文字
+  var tocEls = document.querySelectorAll("a[href='#greeting-anchor'], a[href='#greeting-anchor'] span");
+  tocEls.forEach(function(e) {
+    e.textContent = greeting;
+  });
 })();
 </script>
 
