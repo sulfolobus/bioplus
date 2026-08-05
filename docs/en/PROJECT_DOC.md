@@ -30,6 +30,7 @@ The site is organized into three major layers:
 1. Research Areas
 2. Learning Resources
 3. Traditional Chinese Medicine
+4. Chinese Classics (long-term study column)
 
 ### 1.3 Learning Resources (Current 3-Track Structure)
 
@@ -140,6 +141,7 @@ English mirrors Chinese structure with mapped directories:
 - research areas (8 mirrored modules)
 - learning resources (3 mirrored tracks)
 - traditional Chinese medicine module
+- Chinese classics module (classics-study column + progress pages)
 
 ---
 
@@ -154,6 +156,7 @@ Includes:
 3. Research Groups, Achievements, Popular Science
 4. Learning Resources (3 tracks)
 5. Traditional Chinese Medicine
+6. Chinese Classics (Classics Study column)
 
 ### 5.2 English Navigation (`mkdocs-en.yml`)
 

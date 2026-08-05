@@ -47,6 +47,9 @@ The project uses three top-level content domains:
 1. Research Areas
 2. Learning Resources
 3. Traditional Chinese Medicine
+4. Chinese Classics (Classics Study column; progress must remain continuous)
+
+The authoritative progress record for the Chinese Classics column is the repository root file `classics_study_progress.yml`. Every new daily page must be mirrored in English navigation and validated with both `mkdocs build --strict` commands.
 
 ### 2.3 Learning Resources 3-Track Rule
 

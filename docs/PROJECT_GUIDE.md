@@ -47,6 +47,9 @@ bioplus/
 1. 研究领域（Research Areas）
 2. 学习资源（Learning Resources）
 3. 中医经典/Traditional Chinese Medicine
+4. 中华经典/Chinese Classics（经典研读专栏，需维护连续进度）
+
+中华经典专栏的连续进度以仓库根目录 `classics_study_progress.yml` 为准；每次新增页面后必须同步更新中英文导航并通过双语 `mkdocs build --strict` 检查。
 
 ### 2.3 学习资源三级入口规范
 

@@ -268,6 +268,13 @@ nav:
       - traditional-chinese-medicine/jingui-yaolue.md
       - traditional-chinese-medicine/bencao-gangmu.md
       - traditional-chinese-medicine/wisdom-of-health-preservation.md
+  - Chinese Classics:
+      - chinese-classics/index.md
+      - Classics Study:
+          - chinese-classics/classics-study/index.md
+          - chinese-classics/classics-study/progress.md
+          - Daily Entries:
+              - Issue 001 (2026-08-05): chinese-classics/classics-study/daily/2026-08-05-issue-001.md
 
 docs_dir: docs/en
 site_dir: site/en
