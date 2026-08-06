@@ -1,13 +1,13 @@
 series: classics-study
 started_at: "2026-08-05"
-last_run_date: "2026-08-05"
+last_run_date: "2026-08-06"
 
 # 说明：
-# - current_* 表示“刚刚完成”的进度点
-# - next_* 表示“下一期计划”进度点
+# - current_* 表示"刚刚完成"的进度点
+# - next_* 表示"下一期计划"进度点
 issue:
-  current_no: 1
-  next_no: 2
+  current_no: 2
+  next_no: 3
 
 meridians:
   # 十二正经循行常用顺序（以气血流注次序为主）
@@ -24,16 +24,16 @@ meridians:
     - 手少阳三焦经
     - 足少阳胆经
     - 足厥阴肝经
-  current: 手太阴肺经
-  next: 手阳明大肠经
+  current: 手阳明大肠经
+  next: 足阳明胃经
 
 daodejing:
-  current_chapter: 1
-  next_chapter: 2
+  current_chapter: 2
+  next_chapter: 3
   edition_note: "维基文库《道德经（王弼本）》"
 
 dizangjing:
-  # 地藏菩萨本愿经：以“品”为推进单位（13品）
+  # 地藏菩萨本愿经：以"品"为推进单位（13品）
   order:
     - 忉利天宫神通品第一
     - 分身集会品第二
@@ -48,8 +48,8 @@ dizangjing:
     - 地神护法品第十一
     - 见闻利益品第十二
     - 嘱累人天品第十三
-  current: 忉利天宫神通品第一
-  next: 分身集会品第二
+  current: 分身集会品第二
+  next: 观众生业缘品第三
   edition_note: "维基文库《地藏菩萨本愿经》（实叉难陀译）"
 
 history:
@@ -60,3 +60,10 @@ history:
       wechat_markdown: "经典研读输出/2026-08-05-经典研读-公众号版.md"
       site_zh_page: "中华经典/经典研读专栏/每日研读/第001期 2026-08-05 肺经·道德经第1章·地藏经品1.md"
       site_en_page: "chinese-classics/classics-study/daily/2026-08-05-issue-001.md"
+  - date: "2026-08-06"
+    issue_no: 2
+    title: "大肠经 · 道德经第2章 · 地藏经分身集会品第二"
+    outputs:
+      wechat_markdown: "经典研读输出/2026-08-06-经典研读-公众号版.md"
+      site_zh_page: "中华经典/经典研读专栏/每日研读/第002期 2026-08-06 大肠经·道德经第2章·地藏经品2.md"
+      site_en_page: "chinese-classics/classics-study/daily/2026-08-06-issue-002.md"
