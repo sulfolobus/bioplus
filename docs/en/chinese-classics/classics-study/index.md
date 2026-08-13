@@ -8,6 +8,8 @@ This is a long-running daily column for studying major Chinese classics. Each is
 
 ## Today's entry
 
+- [Issue 006 (2026-08-13): Small Intestine Meridian · Dao De Jing Ch.6 · Kṣitigarbha Sutra (Section 6)](daily/2026-08-13-issue-006.md)
+- [Issue 005 (2026-08-12): Heart Meridian · Dao De Jing Ch.5 · Kṣitigarbha Sutra (Section 5)](daily/2026-08-12-issue-005.md)
 - [Issue 004 (2026-08-08): Spleen Meridian · Dao De Jing Ch.4 · Kṣitigarbha Sutra (Section 4)](daily/2026-08-08-issue-004.md)
 - [Issue 003 (2026-08-07): Stomach Meridian · Dao De Jing Ch.3 · Kṣitigarbha Sutra (Section 3)](daily/2026-08-07-issue-003.md)
 - [Issue 002 (2026-08-06): Large Intestine Meridian · Dao De Jing Ch.2 · Kṣitigarbha Sutra (Section 2)](daily/2026-08-06-issue-002.md)
@@ -17,8 +19,8 @@ This is a long-running daily column for studying major Chinese classics. Each is
 
 | Track | Unit | Completed | Next |
 | --- | --- | --- | --- |
-| Twelve Meridians | one meridian per issue | Spleen Meridian (Foot-Taiyin) | Heart Meridian (Hand-Shaoyin) |
-| Dao De Jing | one chapter per issue | Chapter 4 | Chapter 5 |
-| Kṣitigarbha Sutra | one "pin" (section) per issue | Section 4 | Section 5 |
+| Twelve Meridians | one meridian per issue | Small Intestine Meridian (Hand-Taiyang) | Bladder Meridian (Foot-Taiyang) |
+| Dao De Jing | one chapter per issue | Chapter 6 | Chapter 7 |
+| Kṣitigarbha Sutra | one "pin" (section) per issue | Section 6 | Section 7 |
 
 For the authoritative progress record, see `classics_study_progress.yml`. A human-readable list is available on the [Progress Tracker](progress.md).
