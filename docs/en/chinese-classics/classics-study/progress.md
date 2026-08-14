@@ -8,13 +8,13 @@ This page tracks what has been completed and what will be studied next, so the c
 
 The authoritative source of truth is `classics_study_progress.yml` at the repository root.
 
-## Current status (as of 2026-08-13)
+## Current status (as of 2026-08-14)
 
 | Track | Completed | Next |
 | --- | --- | --- |
-| Twelve Meridians | Small Intestine Meridian (Hand-Taiyang) | Bladder Meridian (Foot-Taiyang) |
-| Dao De Jing | Chapter 6 | Chapter 7 |
-| Kṣitigarbha Sutra | Section 6 | Section 7 |
+| Twelve Meridians | Kidney Meridian (Foot-Shaoyin) | Pericardium Meridian (Hand-Jueyin) |
+| Dao De Jing | Chapter 8 | Chapter 9 |
+| Kṣitigarbha Sutra | Section 8 | Section 9 |
 
 ## Published issues
 
@@ -26,8 +26,10 @@ The authoritative source of truth is `classics_study_progress.yml` at the reposi
 | 004 | 2026-08-08 | Spleen Meridian · Dao De Jing Ch.4 · Kṣitigarbha Sutra (Section 4) | [Read](daily/2026-08-08-issue-004.md) |
 | 005 | 2026-08-12 | Heart Meridian · Dao De Jing Ch.5 · Kṣitigarbha Sutra (Section 5) | [Read](daily/2026-08-12-issue-005.md) |
 | 006 | 2026-08-13 | Small Intestine Meridian · Dao De Jing Ch.6 · Kṣitigarbha Sutra (Section 6) | [Read](daily/2026-08-13-issue-006.md) |
+| 007 | 2026-08-14 | Bladder Meridian · Dao De Jing Ch.7 · Kṣitigarbha Sutra (Section 7) | [Read](daily/2026-08-14-issue-007.md) |
+| 008 | 2026-08-14 | Kidney Meridian · Dao De Jing Ch.8 · Kṣitigarbha Sutra (Section 8) | [Read](daily/2026-08-14-issue-008.md) |
 
 ## Next issue note
 
-- Planned topic: Bladder Meridian (Foot-Taiyang) · Dao De Jing Ch.7 · Kṣitigarbha Sutra (Section 7)
+- Planned topic: Pericardium Meridian (Hand-Jueyin) · Dao De Jing Ch.9 · Kṣitigarbha Sutra Section 9
 - If a build or push fails, keep generated files and write a failure note under `经典研读输出/` so progress is not lost.

@@ -1,13 +1,13 @@
 series: classics-study
 started_at: "2026-08-05"
-last_run_date: "2026-08-13"
+last_run_date: "2026-08-14"
 
 # 说明：
 # - current_* 表示"刚刚完成"的进度点
 # - next_* 表示"下一期计划"进度点
 issue:
-  current_no: 6
-  next_no: 7
+  current_no: 8
+  next_no: 9
 
 meridians:
   # 十二正经循行常用顺序（以气血流注次序为主）
@@ -24,12 +24,12 @@ meridians:
     - 手少阳三焦经
     - 足少阳胆经
     - 足厥阴肝经
-  current: 手太阳小肠经
-  next: 足太阳膀胱经
+  current: 足少阴肾经
+  next: 手厥阴心包经
 
 daodejing:
-  current_chapter: 6
-  next_chapter: 7
+  current_chapter: 8
+  next_chapter: 9
   edition_note: "维基文库《道德经（王弼本）》"
 
 dizangjing:
@@ -48,11 +48,25 @@ dizangjing:
     - 地神护法品第十一
     - 见闻利益品第十二
     - 嘱累人天品第十三
-  current: 如来赞叹品第六
-  next: 利益存亡品第七
+  current: 阎罗王众赞叹品第八
+  next: 称佛名号品第九
   edition_note: "维基文库《地藏菩萨本愿经》（实叉难陀译）"
 
 history:
+  - date: "2026-08-14"
+    issue_no: 8
+    title: "肾经 · 道德经第8章 · 地藏经阎罗王众赞叹品第八"
+    outputs:
+      wechat_markdown: "经典研读输出/2026-08-14-经典研读-008-公众号版.md"
+      site_zh_page: "中华经典/经典研读专栏/每日研读/第008期 2026-08-14 肾经·道德经第8章·地藏经品8.md"
+      site_en_page: "chinese-classics/classics-study/daily/2026-08-14-issue-008.md"
+  - date: "2026-08-14"
+    issue_no: 7
+    title: "膀胱经 · 道德经第7章 · 地藏经利益存亡品第七"
+    outputs:
+      wechat_markdown: "经典研读输出/2026-08-14-经典研读-公众号版.md"
+      site_zh_page: "中华经典/经典研读专栏/每日研读/第007期 2026-08-14 膀胱经·道德经第7章·地藏经品7.md"
+      site_en_page: "chinese-classics/classics-study/daily/2026-08-14-issue-007.md"
   - date: "2026-08-13"
     issue_no: 6
     title: "小肠经 · 道德经第6章 · 地藏经如来赞叹品第六"
