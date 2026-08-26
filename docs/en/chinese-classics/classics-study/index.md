@@ -8,6 +8,8 @@ This is a long-running daily column for studying major Chinese classics. Each is
 
 ## Today's entry
 
+- [Issue 011 (2026-08-26): Gallbladder Meridian · Dao De Jing Ch.11 · Kṣitigarbha Sutra (Section 11)](daily/2026-08-26-issue-011.md)
+- [Issue 010 (2026-08-25): Triple Burner Meridian · Dao De Jing Ch.10 · Kṣitigarbha Sutra (Section 10)](daily/2026-08-25-issue-010.md)
 - [Issue 009 (2026-08-15): Pericardium Meridian · Dao De Jing Ch.9 · Kṣitigarbha Sutra (Section 9)](daily/2026-08-15-issue-009.md)
 - [Issue 008 (2026-08-14): Kidney Meridian · Dao De Jing Ch.8 · Kṣitigarbha Sutra (Section 8)](daily/2026-08-14-issue-008.md)
 - [Issue 006 (2026-08-13): Small Intestine Meridian · Dao De Jing Ch.6 · Kṣitigarbha Sutra (Section 6)](daily/2026-08-13-issue-006.md)
@@ -21,8 +23,8 @@ This is a long-running daily column for studying major Chinese classics. Each is
 
 | Track | Unit | Completed | Next |
 | --- | --- | --- | --- |
-| Twelve Meridians | one meridian per issue | Pericardium Meridian (Hand-Jueyin) | Triple Burner Meridian (Hand-Shaoyang) |
-| Dao De Jing | one chapter per issue | Chapter 9 | Chapter 10 |
-| Kṣitigarbha Sutra | one "pin" (section) per issue | Section 9 | Section 10 |
+| Twelve Meridians | one meridian per issue | Gallbladder Meridian (Foot-Shaoyang) | Liver Meridian (Foot-Jueyin) |
+| Dao De Jing | one chapter per issue | Chapter 11 | Chapter 12 |
+| Kṣitigarbha Sutra | one "pin" (section) per issue | Section 11 | Section 12 |
 
 For the authoritative progress record, see `classics_study_progress.yml`. A human-readable list is available on the [Progress Tracker](progress.md).
