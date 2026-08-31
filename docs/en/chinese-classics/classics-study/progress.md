@@ -8,13 +8,14 @@ This page tracks what has been completed and what will be studied next, so the c
 
 The authoritative source of truth is `classics_study_progress.yml` at the repository root.
 
-## Current status (as of 2026-08-30)
+## Current status (as of 2026-08-31)
 
 | Track | Completed | Next |
 | --- | --- | --- |
-| Twelve Meridians | Liver Meridian (Foot-Jueyin) — cycle 1 complete | Lung Meridian (Hand-Taiyin) — cycle 2 begins |
-| Dao De Jing | Chapter 12 | Chapter 13 |
-| Kṣitigarbha Sutra | Section 12 | Section 13 |
+| Twelve Meridians | Lung Meridian (Hand-Taiyin) — cycle 2 begins | Large Intestine Meridian (Hand-Yangming) — cycle 2 |
+| Dao De Jing | Chapter 13 | Chapter 14 |
+| Kṣitigarbha Sutra | Section 13 — all 13 sections complete | Completed → next classic: Huangdi Sijing |
+| Huangdi Sijing (黄帝四经) | Pending (begins after Kṣitigarbha Sutra) | Jingfa (经法) |
 
 ## Published issues
 
@@ -32,8 +33,9 @@ The authoritative source of truth is `classics_study_progress.yml` at the reposi
 | 010 | 2026-08-25 | Triple Burner Meridian · Dao De Jing Ch.10 · Kṣitigarbha Sutra (Section 10) | [Read](daily/2026-08-25-issue-010.md) |
 | 011 | 2026-08-26 | Gallbladder Meridian · Dao De Jing Ch.11 · Kṣitigarbha Sutra (Section 11) | [Read](daily/2026-08-26-issue-011.md) |
 | 012 | 2026-08-30 | Liver Meridian · Dao De Jing Ch.12 · Kṣitigarbha Sutra (Section 12) | [Read](daily/2026-08-30-issue-012.md) |
+| 013 | 2026-08-31 | Lung Meridian · Dao De Jing Ch.13 · Kṣitigarbha Sutra (Section 13) | [Read](daily/2026-08-31-issue-013.md) |
 
 ## Next issue note
 
-- Planned topic: Lung Meridian (Hand-Taiyin, second cycle) · Dao De Jing Ch.13 · Kṣitigarbha Sutra Section 13
+- Planned topic: Large Intestine Meridian (Hand-Yangming, cycle 2) · Dao De Jing Ch.14 · Huangdi Sijing — Jingfa (经法)
 - If a build or push fails, keep generated files and write a failure note under `经典研读输出/` so progress is not lost.

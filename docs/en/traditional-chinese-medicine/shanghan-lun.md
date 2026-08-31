@@ -60,5 +60,5 @@ Formulas from Shanghan Lun are still widely used in clinical practice today. Man
 
 ## Related Links
 
-- [Huangdi Neijing](../huangdi-neijing/)
-- [Jingui Yaolue](../jingui-yaolue/)
+- [Huangdi Neijing](huangdi-neijing.md)
+- [Jingui Yaolue](jingui-yaolue.md)

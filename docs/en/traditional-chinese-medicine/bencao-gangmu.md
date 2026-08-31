@@ -69,6 +69,6 @@ Bencao Gangmu is not only an important document of TCM but also valuable source 
 
 ## Related Links
 
-- [Huangdi Neijing](../huangdi-neijing/)
-- [Jingui Yaolue](../jingui-yaolue/)
-- [Wisdom of Health Preservation](../wisdom-of-health-preservation/)
+- [Huangdi Neijing](huangdi-neijing.md)
+- [Jingui Yaolue](jingui-yaolue.md)
+- [Wisdom of Health Preservation](wisdom-of-health-preservation.md)

@@ -96,5 +96,5 @@ TCM health preservation has significant importance in modern society:
 
 ## Related Links
 
-- [Huangdi Neijing](../huangdi-neijing/)
-- [Bencao Gangmu](../bencao-gangmu/)
+- [Huangdi Neijing](huangdi-neijing.md)
+- [Bencao Gangmu](bencao-gangmu.md)

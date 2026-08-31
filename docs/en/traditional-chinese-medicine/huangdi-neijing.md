@@ -66,6 +66,6 @@ The theoretical system of Huangdi Neijing still guides TCM clinical practice tod
 
 ## Related Links
 
-- [Shanghan Lun](../shanghan-lun/)
-- [Jingui Yaolue](../jingui-yaolue/)
-- [Bencao Gangmu](../bencao-gangmu/)
+- [Shanghan Lun](shanghan-lun.md)
+- [Jingui Yaolue](jingui-yaolue.md)
+- [Bencao Gangmu](bencao-gangmu.md)

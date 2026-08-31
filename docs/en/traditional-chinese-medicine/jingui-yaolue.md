@@ -61,6 +61,6 @@ Formulas from Jingui Yaolue are widely used in modern TCM clinical practice, par
 
 ## Related Links
 
-- [Huangdi Neijing](../huangdi-neijing/)
-- [Shanghan Lun](../shanghan-lun/)
-- [Bencao Gangmu](../bencao-gangmu/)
+- [Huangdi Neijing](huangdi-neijing.md)
+- [Shanghan Lun](shanghan-lun.md)
+- [Bencao Gangmu](bencao-gangmu.md)
