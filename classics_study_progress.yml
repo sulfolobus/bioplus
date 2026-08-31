@@ -8,8 +8,8 @@ last_run_date: "2026-08-31"
 # - 经脉线（十二正经）为固定 12 条，第一轮于第012期（足厥阴肝经）收圆，第013期起进入第二轮循环
 # - 经典切换规则：当《地藏经》《道德经》等"经典线"全部研读完，按 黄帝四经 → 楞严经 → 庄子 → 六祖坛经 顺序接续为第三条线
 issue:
-  current_no: 13
-  next_no: 14
+  current_no: 14
+  next_no: 15
 
 meridians:
   # 十二正经循行常用顺序（以气血流注次序为主）；第一轮第012期收圆，第013期起第二轮循环
@@ -26,13 +26,13 @@ meridians:
     - 手少阳三焦经
     - 足少阳胆经
     - 足厥阴肝经
-  current: 手太阴肺经
-  next: 手阳明大肠经
+  current: 手阳明大肠经
+  next: 足阳明胃经
   round: 2
 
 daodejing:
-  current_chapter: 13
-  next_chapter: 14
+  current_chapter: 14
+  next_chapter: 15
   edition_note: "维基文库《道德经（王弼本）》"
 
 dizangjing:
@@ -59,7 +59,7 @@ dizangjing:
 huangdisijing:
   # 黄帝四经（马王堆帛书）：地藏经全部完成后，自第014期起接续为第三条线（按篇推进）
   # 含 经法(9篇) / 十大经(15篇) / 称 / 道原，共 25 单元
-  status: pending
+  status: active
   order:
     - 经法·道法第一
     - 经法·国次第二
@@ -92,6 +92,13 @@ huangdisijing:
   edition_note: "维基文库《黄帝四经》（马王堆帛书，含经法、十大经、称、道原四部）"
 
 history:
+  - date: "2026-08-31"
+    issue_no: 14
+    title: "大肠经 · 道德经第14章 · 黄帝四经经法·道法第一"
+    outputs:
+      wechat_markdown: "经典研读输出/2026-08-31-经典研读-014-公众号版.md"
+      site_zh_page: "中华经典/经典研读专栏/每日研读/第014期 2026-08-31 大肠经·道德经第14章·黄帝四经道法第一.md"
+      site_en_page: "chinese-classics/classics-study/daily/2026-08-31-issue-014.md"
   - date: "2026-08-31"
     issue_no: 13
     title: "肺经 · 道德经第13章 · 地藏经嘱累人天品第十三"
