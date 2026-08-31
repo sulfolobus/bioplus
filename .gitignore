@@ -53,3 +53,6 @@ tmp/
 
 # Trae AI
 .trae/
+
+# WorkBuddy automation runtime (config/memory, not content)
+.workbuddy/
