@@ -1,6 +1,6 @@
 series: classics-study
 started_at: "2026-08-05"
-last_run_date: "2026-08-31"
+last_run_date: "2026-09-01"
 
 # 说明：
 # - current_* 表示"刚刚完成"的进度点
@@ -8,8 +8,8 @@ last_run_date: "2026-08-31"
 # - 经脉线（十二正经）为固定 12 条，第一轮于第012期（足厥阴肝经）收圆，第013期起进入第二轮循环
 # - 经典切换规则：当《地藏经》《道德经》等"经典线"全部研读完，按 黄帝四经 → 楞严经 → 庄子 → 六祖坛经 顺序接续为第三条线
 issue:
-  current_no: 14
-  next_no: 15
+  current_no: 15
+  next_no: 16
 
 meridians:
   # 十二正经循行常用顺序（以气血流注次序为主）；第一轮第012期收圆，第013期起第二轮循环
@@ -26,13 +26,13 @@ meridians:
     - 手少阳三焦经
     - 足少阳胆经
     - 足厥阴肝经
-  current: 手阳明大肠经
-  next: 足阳明胃经
+  current: 足阳明胃经
+  next: 足太阴脾经
   round: 2
 
 daodejing:
-  current_chapter: 14
-  next_chapter: 15
+  current_chapter: 15
+  next_chapter: 16
   edition_note: "维基文库《道德经（王弼本）》"
 
 dizangjing:
@@ -87,11 +87,18 @@ huangdisijing:
     - 十大经·名形第十五
     - 称
     - 道原
-  current: 经法·道法第一
-  next: 经法·国次第二
+  current: 经法·国次第二
+  next: 经法·君正第三
   edition_note: "维基文库《黄帝四经》（马王堆帛书，含经法、十大经、称、道原四部）"
 
 history:
+  - date: "2026-09-01"
+    issue_no: 15
+    title: "胃经 · 道德经第15章 · 黄帝四经经法·国次第二"
+    outputs:
+      wechat_markdown: "经典研读输出/2026-09-01-经典研读-015-公众号版.md"
+      site_zh_page: "中华经典/经典研读专栏/每日研读/第015期 2026-09-01 胃经·道德经第15章·黄帝四经国次第二.md"
+      site_en_page: "chinese-classics/classics-study/daily/2026-09-01-issue-015.md"
   - date: "2026-08-31"
     issue_no: 14
     title: "大肠经 · 道德经第14章 · 黄帝四经经法·道法第一"

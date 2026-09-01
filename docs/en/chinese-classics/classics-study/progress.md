@@ -8,14 +8,14 @@ This page tracks what has been completed and what will be studied next, so the c
 
 The authoritative source of truth is `classics_study_progress.yml` at the repository root.
 
-## Current status (as of 2026-08-31)
+## Current status (as of 2026-09-01)
 
 | Track | Completed | Next |
 | --- | --- | --- |
-| Twelve Meridians | Large Intestine Meridian (Hand-Yangming) — cycle 2 | Stomach Meridian (Foot-Yangming) — cycle 2 |
-| Dao De Jing | Chapter 14 | Chapter 15 |
+| Twelve Meridians | Stomach Meridian (Foot-Yangming) — cycle 2 | Spleen Meridian (Foot-Taiyin) — cycle 2 |
+| Dao De Jing | Chapter 15 | Chapter 16 |
 | Kṣitigarbha Sutra | Section 13 — all 13 sections complete | Completed → next classic: Huangdi Sijing |
-| Huangdi Sijing (黄帝四经) | Jingfa · Daofa (经法·道法第一) | Jingfa · Guoci (经法·国次第二) |
+| Huangdi Sijing (黄帝四经) | Jingfa · Guoci (经法·国次第二) | Jingfa · Junzheng (经法·君正第三) |
 
 ## Published issues
 
@@ -35,8 +35,9 @@ The authoritative source of truth is `classics_study_progress.yml` at the reposi
 | 012 | 2026-08-30 | Liver Meridian · Dao De Jing Ch.12 · Kṣitigarbha Sutra (Section 12) | [Read](daily/2026-08-30-issue-012.md) |
 | 013 | 2026-08-31 | Lung Meridian · Dao De Jing Ch.13 · Kṣitigarbha Sutra (Section 13) | [Read](daily/2026-08-31-issue-013.md) |
 | 014 | 2026-08-31 | Large Intestine Meridian · Dao De Jing Ch.14 · Huangdi Sijing (Jingfa · Daofa) | [Read](daily/2026-08-31-issue-014.md) |
+| 015 | 2026-09-01 | Stomach Meridian · Dao De Jing Ch.15 · Huangdi Sijing (Jingfa · Guoci) | [Read](daily/2026-09-01-issue-015.md) |
 
 ## Next issue note
 
-- Planned topic: Stomach Meridian (Foot-Yangming, cycle 2) · Dao De Jing Ch.15 · Huangdi Sijing — Jingfa · Guoci (经法·国次第二)
+- Planned topic: Spleen Meridian (Foot-Taiyin, cycle 2) · Dao De Jing Ch.16 · Huangdi Sijing — Jingfa · Junzheng (经法·君正第三)
 - If a build or push fails, keep generated files and write a failure note under `经典研读输出/` so progress is not lost.

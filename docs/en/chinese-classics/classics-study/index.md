@@ -8,6 +8,7 @@ This is a long-running daily column for studying major Chinese classics. Each is
 
 ## Today's entry
 
+- [Issue 015 (2026-09-01): Stomach Meridian · Dao De Jing Ch.15 · Huangdi Sijing (Jingfa · Guoci)](daily/2026-09-01-issue-015.md)
 - [Issue 014 (2026-08-31): Large Intestine Meridian · Dao De Jing Ch.14 · Huangdi Sijing (Jingfa · Daofa)](daily/2026-08-31-issue-014.md)
 - [Issue 013 (2026-08-31): Lung Meridian · Dao De Jing Ch.13 · Kṣitigarbha Sutra (Section 13)](daily/2026-08-31-issue-013.md)
 - [Issue 012 (2026-08-30): Liver Meridian · Dao De Jing Ch.12 · Kṣitigarbha Sutra (Section 12)](daily/2026-08-30-issue-012.md)
@@ -26,9 +27,9 @@ This is a long-running daily column for studying major Chinese classics. Each is
 
 | Track | Unit | Completed | Next |
 | --- | --- | --- | --- |
-| Twelve Meridians | one meridian per issue | Large Intestine Meridian (Hand-Yangming) — cycle 2 | Stomach Meridian (Foot-Yangming) — cycle 2 |
-| Dao De Jing | one chapter per issue | Chapter 14 | Chapter 15 |
+| Twelve Meridians | one meridian per issue | Stomach Meridian (Foot-Yangming) — cycle 2 | Spleen Meridian (Foot-Taiyin) — cycle 2 |
+| Dao De Jing | one chapter per issue | Chapter 15 | Chapter 16 |
 | Kṣitigarbha Sutra | one "pin" (section) per issue | Section 13 — all 13 sections complete | Completed → next: Huangdi Sijing |
-| Huangdi Sijing (黄帝四经) | one "pian" (chapter) per issue | Jingfa · Daofa (经法·道法第一) | Jingfa · Guoci (经法·国次第二) |
+| Huangdi Sijing (黄帝四经) | one "pian" (chapter) per issue | Jingfa · Guoci (经法·国次第二) | Jingfa · Junzheng (经法·君正第三) |
 
 For the authoritative progress record, see `classics_study_progress.yml`. A human-readable list is available on the [Progress Tracker](progress.md).
