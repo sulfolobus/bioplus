@@ -1,6 +1,6 @@
 series: classics-study
 started_at: "2026-08-05"
-last_run_date: "2026-09-01"
+last_run_date: "2026-09-02"
 
 # 说明：
 # - current_* 表示"刚刚完成"的进度点
@@ -87,8 +87,8 @@ huangdisijing:
     - 十大经·名形第十五
     - 称
     - 道原
-  current: 经法·国次第二
-  next: 经法·君正第三
+  current: 经法·君正第三
+  next: 经法·六分第四
   edition_note: "维基文库《黄帝四经》（马王堆帛书，含经法、十大经、称、道原四部）"
 
 history:

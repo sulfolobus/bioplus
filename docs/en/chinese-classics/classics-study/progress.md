@@ -8,14 +8,14 @@ This page tracks what has been completed and what will be studied next, so the c
 
 The authoritative source of truth is `classics_study_progress.yml` at the repository root.
 
-## Current status (as of 2026-09-01)
+## Current status (as of 2026-09-02)
 
 | Track | Completed | Next |
 | --- | --- | --- |
-| Twelve Meridians | Stomach Meridian (Foot-Yangming) — cycle 2 | Spleen Meridian (Foot-Taiyin) — cycle 2 |
-| Dao De Jing | Chapter 15 | Chapter 16 |
+| Twelve Meridians | Spleen Meridian (Foot-Taiyin) — cycle 2 | Heart Meridian (Hand-Shaoyin) — cycle 2 |
+| Dao De Jing | Chapter 16 | Chapter 17 |
 | Kṣitigarbha Sutra | Section 13 — all 13 sections complete | Completed → next classic: Huangdi Sijing |
-| Huangdi Sijing (黄帝四经) | Jingfa · Guoci (经法·国次第二) | Jingfa · Junzheng (经法·君正第三) |
+| Huangdi Sijing (黄帝四经) | Jingfa · Junzheng (经法·君正第三) | Jingfa · Liufen (经法·六分第四) |
 
 ## Published issues
 
@@ -39,5 +39,5 @@ The authoritative source of truth is `classics_study_progress.yml` at the reposi
 
 ## Next issue note
 
-- Planned topic: Spleen Meridian (Foot-Taiyin, cycle 2) · Dao De Jing Ch.16 · Huangdi Sijing — Jingfa · Junzheng (经法·君正第三)
+- Planned topic: Heart Meridian (Hand-Shaoyin, cycle 2) · Dao De Jing Ch.17 · Huangdi Sijing — Jingfa · Liufen (经法·六分第四)
 - If a build or push fails, keep generated files and write a failure note under `经典研读输出/` so progress is not lost.
