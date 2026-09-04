@@ -1,24 +1,23 @@
-def on_page_context(context, page, page_obj):
-    return """
-<footer class="md-footer">
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        <span class="md-footer-copyright__highlight">
-          BioPlus - 生命科学实践应用平台
-        </span>
-        <span class="md-footer-copyright__highlight">
-          聚焦基因编辑、医学诊断、药物研发、生物技术
-        </span>
-      </div>
-      <div class="md-footer-social">
-        <a href="https://github.com/yourusername/bioplus" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
-"""
+# BioPlus - Custom Footer Hook
+# 正确实现 MkDocs hook，用于注入自定义页脚内容
+
+def on_page_markdown(markdown, page, config, files):
+    """
+    在页面 Markdown 渲染前处理（预留扩展点）
+    当前不需要修改 Markdown 内容
+    """
+    return markdown
+
+
+def on_env(env, config, files):
+    """
+    在 Jinja2 环境初始化后添加自定义模板变量
+    用于在模板中访问自定义配置
+    """
+    env.globals['bioplus_footer'] = {
+        'site_name_zh': 'BioPlus - 生命科学实践应用平台',
+        'site_name_en': 'BioPlus - Life Science Platform',
+        'slogan_zh': '聚焦基因编辑、医学诊断、药物研发、生物技术',
+        'slogan_en': 'Gene Editing · Medical Diagnosis · Drug Development · Biotechnology',
+    }
+    return env

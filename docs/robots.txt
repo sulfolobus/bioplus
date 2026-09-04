@@ -1,21 +1,26 @@
 # Robots.txt for BioPlus
-# https://www.bioplus.com
+# https://sulfolobus.github.io/bioplus
 
 User-agent: *
 Allow: /
-
-# Disallow specific paths (if needed)
-# Disallow: /private/
-# Disallow: /admin/
+Disallow: /assets/
+Disallow: /search/
 
 # Sitemap
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://sulfolobus.github.io/bioplus/sitemap.xml
+Sitemap: https://sulfolobus.github.io/bioplus/en/sitemap.xml
 
-# Block common scrapers (optional - these are not official user-agents)
+# Block known malicious scrapers and SEO bots
 User-agent: SemrushBot
 Disallow: /
 
+User-agent: SemrushBot-SI
+Disallow: /
+
 User-agent: AhrefsBot
+Disallow: /
+
+User-agent: AhrefsSiteAudit
 Disallow: /
 
 User-agent: MJ12bot
@@ -23,3 +28,61 @@ Disallow: /
 
 User-agent: DotBot
 Disallow: /
+
+User-agent: Rogerbot
+Disallow: /
+
+User-agent: Moz-Daemon
+Disallow: /
+
+User-agent: Screaming Frog SEO Spider
+Disallow: /
+
+User-agent: SiteAuditBot
+Disallow: /
+
+User-agent: Grapeshot
+Disallow: /
+
+User-agent: masscan
+Disallow: /
+
+User-agent: zgrab
+Disallow: /
+
+User-agent: curl
+Disallow: /
+
+User-agent: Wget
+Disallow: /
+
+User-agent: python-requests
+Disallow: /
+
+User-agent: Python-urllib
+Disallow: /
+
+User-agent: Go-http-client
+Disallow: /
+
+User-agent: Java/
+Disallow: /
+
+User-agent: libwww-perl
+Disallow: /
+
+# Allow legitimate search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /

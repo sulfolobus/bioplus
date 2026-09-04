@@ -13,19 +13,54 @@ theme:
     custom_dir: overrides
     language: en
     palette:
-        primary: teal
-        accent: teal
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: teal
+          accent: teal
+          toggle:
+              icon: material/weather-night
+              name: Switch to dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: teal
+          accent: teal
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to light mode
     features:
         - navigation.instant
         - navigation.tabs
+        - navigation.top
+        - navigation.path
+        - navigation.indexes
         - search.suggest
         - search.highlight
+        - search.share
+        - content.code.copy
+        - content.action.edit
+        - content.action.view
+        - toc.follow
+    icon:
+        repo: fontawesome/brands/github
 
 plugins:
   - search:
-      # Option removed for compatibility
+      lang:
+        - en
+        - zh
   - minify:
       minify_html: true
+  - rss:
+      enabled: true
+      image: https://sulfolobus.github.io/bioplus/assets/logo.svg
+      categories:
+        - tags
+      pretty_print: true
+      match_path: ".*"
+      abstract_chars_count: 160
+
+hooks:
+  - docs/hooks/custom_footer.py
 
 extra:
   giscus:

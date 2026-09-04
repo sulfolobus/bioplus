@@ -1,8 +1,81 @@
+{# BioPlus - Main Template Override #}
+{# 集成：安全防护、用户系统、反爬机制、功能增强 #}
+
 {% extends "base.html" %}
+
+{% block htmltitle %}
+  {% if page.meta and page.meta.title %}
+    <title>{{ page.meta.title }} - {{ config.site_name }}</title>
+  {% elif page.title and not page.is_homepage %}
+    <title>{{ page.title | striptags }} - {{ config.site_name }}</title>
+  {% else %}
+    <title>{{ config.site_name }} - {{ config.site_description }}</title>
+  {% endif %}
+{% endblock %}
+
+{% block extrahead %}
+  {{ super() }}
+
+  {# ===== 安全相关 Meta 标签 ===== #}
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+  {# CSP - 内容安全策略 #}
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' https://giscus.app https://www.googletagmanager.com https://www.google-analytics.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com data:;
+    img-src 'self' data: https:;
+    connect-src 'self' https://giscus.app https://www.google-analytics.com https://api.github.com;
+    frame-src 'self' https://giscus.app;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+  ">
+
+  {# SEO 优化 #}
+  {% if page.meta and page.meta.description %}
+    <meta name="description" content="{{ page.meta.description }}">
+  {% else %}
+    <meta name="description" content="{{ config.site_description }}">
+  {% endif %}
+  <meta name="author" content="{{ config.site_author }}">
+  <meta name="robots" content="index, follow">
+  <meta name="generator" content="MkDocs + Material Theme">
+
+  {# Open Graph #}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  {% if page.title %}
+    <meta property="og:title" content="{{ page.title | striptags }}">
+  {% endif %}
+  {% if page.meta and page.meta.description %}
+    <meta property="og:description" content="{{ page.meta.description }}">
+  {% else %}
+    <meta property="og:description" content="{{ config.site_description }}">
+  {% endif %}
+  <meta property="og:image" content="{{ config.site_url }}assets/logo.svg">
+
+  {# Twitter Card #}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | striptags if page.title else config.site_name }}">
+  <meta name="twitter:description" content="{{ page.meta.description if page.meta and page.meta.description else config.site_description }}">
+
+  {# 规范链接 #}
+  <link rel="canonical" href="{{ page.canonical_url }}">
+
+  {# RSS 订阅 #}
+  <link rel="alternate" type="application/rss+xml" title="{{ config.site_name }} RSS" href="{{ config.site_url }}feed_rss_created.xml">
+{% endblock %}
 
 {% block content %}
   {{ super() }}
 
+  {# ===== 评论区（Giscus） ===== #}
   {% set g = config.extra.get('giscus', {}) %}
   {% set repo = g.get('repo', '') %}
   {% set repo_id = g.get('repo_id', '') %}
@@ -41,5 +114,501 @@
         </p>
       {% endif %}
     </section>
+  {% endif %}
+
+  {# ===== 隐形水印层 ===== #}
+  <div id="bioplus-watermark" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.008;
+    font-size: 16px;
+    color: #000;
+    overflow: hidden;
+    display: none;
+  "></div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+
+  {# ===== 用户偏好系统 ===== #}
+  <script>
+  (function() {
+    'use strict';
+
+    // BioPlus 用户偏好系统 - 本地存储
+    const UserPrefs = {
+      STORAGE_KEY: 'bioplus_user_prefs',
+      defaults: {
+        theme: 'auto',       // auto | light | dark
+        language: 'auto',    // auto | zh | en
+        fontSize: 'medium',  // small | medium | large
+        readingProgress: {}, // 各页面阅读进度
+        visitCount: 0,
+        lastVisit: null,
+        firstVisit: null,
+        totalReadingTime: 0
+      },
+
+      get() {
+        try {
+          const stored = localStorage.getItem(this.STORAGE_KEY);
+          return stored ? { ...this.defaults, ...JSON.parse(stored) } : { ...this.defaults };
+        } catch (e) {
+          return { ...this.defaults };
+        }
+      },
+
+      set(prefs) {
+        try {
+          localStorage.setItem(this.STORAGE_KEY, JSON.stringify(prefs));
+        } catch (e) {
+          console.warn('BioPlus: Failed to save user prefs');
+        }
+      },
+
+      update(key, value) {
+        const prefs = this.get();
+        prefs[key] = value;
+        this.set(prefs);
+        return prefs;
+      },
+
+      recordVisit() {
+        const prefs = this.get();
+        const now = Date.now();
+        prefs.visitCount++;
+        if (!prefs.firstVisit) prefs.firstVisit = now;
+        prefs.lastVisit = now;
+        this.set(prefs);
+        return prefs;
+      },
+
+      recordReadingProgress(path, scrollPercent) {
+        const prefs = this.get();
+        if (!prefs.readingProgress[path] || scrollPercent > prefs.readingProgress[path]) {
+          prefs.readingProgress[path] = Math.round(scrollPercent);
+          this.set(prefs);
+        }
+      },
+
+      getReadingProgress(path) {
+        const prefs = this.get();
+        return prefs.readingProgress[path] || 0;
+      }
+    };
+
+    // 暴露到全局
+    window.BioPlusUserPrefs = UserPrefs;
+
+    // 记录访问
+    UserPrefs.recordVisit();
+
+    // 记录阅读进度
+    let scrollTimeout;
+    window.addEventListener('scroll', function() {
+      if (scrollTimeout) return;
+      scrollTimeout = setTimeout(function() {
+        scrollTimeout = null;
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        if (docHeight > 0) {
+          const percent = (scrollTop / docHeight) * 100;
+          UserPrefs.recordReadingProgress(window.location.pathname, percent);
+        }
+      }, 500);
+    }, { passive: true });
+  })();
+  </script>
+
+  {# ===== 增强反爬与内容保护 ===== #}
+  <script>
+  (function() {
+    'use strict';
+
+    // === 爬虫检测 ===
+    const botPatterns = [
+      /bot/i, /spider/i, /crawler/i, /scraper/i, /headless/i,
+      /phantom/i, /selenium/i, /webdriver/i, /puppeteer/i,
+      /requests/i, /wget/i, /curl/i, /python/i, /java\//i,
+      /libwww/i, /perl/i, /ruby/i, /php/i, /scan/i
+    ];
+
+    const ua = navigator.userAgent;
+    const isLikelyBot = botPatterns.some(p => p.test(ua));
+
+    // 检测无头浏览器特征
+    const hasHeadlessSignatures = (function() {
+      let score = 0;
+      if (navigator.webdriver) score += 3;
+      if (window.chrome && !window.chrome.runtime) score += 1;
+      if (!window.matchMedia) score += 1;
+      if (navigator.languages && navigator.languages.length === 0) score += 1;
+      if (screen.width === 0 || screen.height === 0) score += 2;
+      return score >= 3;
+    })();
+
+    if (isLikelyBot || hasHeadlessSignatures) {
+      // 对疑似爬虫：延迟加载 + 内容混淆
+      console.log('BioPlus: Automated access detected');
+      document.body.style.opacity = '0';
+      setTimeout(function() {
+        document.body.style.opacity = '1';
+      }, 3000);
+      return;
+    }
+
+    // === 防复制保护（增强版）===
+    let lastCopyTime = 0;
+    const copyCooldown = 2000; // 复制冷却时间
+
+    document.addEventListener('copy', function(e) {
+      const now = Date.now();
+      if (now - lastCopyTime < copyCooldown) {
+        e.preventDefault();
+        return false;
+      }
+      lastCopyTime = now;
+
+      // 复制内容追加版权信息
+      const selection = window.getSelection();
+      const selectedText = selection.toString();
+      if (selectedText.length > 30) {
+        e.preventDefault();
+        const copyright = '\n\n---\n© BioPlus - 生命科学实践应用平台\n' + window.location.href + '\n内容受版权保护，引用请注明来源。';
+        const textWithCopyright = selectedText + copyright;
+        if (e.clipboardData) {
+          e.clipboardData.setData('text/plain', textWithCopyright);
+        }
+      }
+    });
+
+    // 禁用右键菜单（保留开发者工具等选项）
+    document.addEventListener('contextmenu', function(e) {
+      // 允许在输入框和代码块上使用右键
+      const target = e.target;
+      if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' ||
+          target.closest('pre') || target.closest('code')) {
+        return;
+      }
+      e.preventDefault();
+      showFloatingNotice(e.pageX, e.pageY);
+      return false;
+    });
+
+    // 禁用常用快捷键
+    document.addEventListener('keydown', function(e) {
+      const ctrl = e.ctrlKey || e.metaKey;
+      const key = e.key.toLowerCase();
+
+      // 禁用 Ctrl+S, Ctrl+U
+      if (ctrl && (key === 's' || key === 'u')) {
+        e.preventDefault();
+        return false;
+      }
+
+      // Ctrl+C 时触发版权提示
+      if (ctrl && key === 'c') {
+        const selection = window.getSelection().toString();
+        if (selection.length > 50) {
+          showFloatingNotice(e.pageX, e.pageY);
+        }
+      }
+
+      // 禁用 F12 开发工具提示（仅提示，无法真正禁用）
+      if (e.key === 'F12' || (ctrl && e.shiftKey && (key === 'i' || key === 'j' || key === 'c'))) {
+        console.log('%c⚠️ BioPlus', 'font-size: 40px; color: #009688; font-weight: bold;');
+        console.log('%cThis browser feature is intended for developers.', 'font-size: 16px;');
+      }
+    });
+
+    // 禁用拖拽
+    document.addEventListener('dragstart', function(e) {
+      if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+        return false;
+      }
+    });
+
+    // === 隐形文字水印 ===
+    function addWatermark() {
+      const wmContainer = document.getElementById('bioplus-watermark');
+      if (!wmContainer) return;
+
+      const text = '© BioPlus ' + window.location.pathname + ' ' + Date.now();
+      const lines = Math.ceil(window.innerHeight / 80);
+      const cols = Math.ceil(window.innerWidth / 200);
+
+      let html = '';
+      for (let i = 0; i < lines; i++) {
+        for (let j = 0; j < cols; j++) {
+          const rotate = (Math.random() * 30 - 15).toFixed(1);
+          html += '<span style="position:absolute;top:' + (i * 80) + 'px;left:' +
+                  (j * 200) + 'px;transform:rotate(' + rotate + 'deg);white-space:nowrap;">' +
+                  text + '</span>';
+        }
+      }
+      wmContainer.innerHTML = html;
+      wmContainer.style.display = 'block';
+    }
+
+    // 页面加载完成后添加水印（延迟执行避免影响首屏）
+    setTimeout(addWatermark, 2000);
+
+    // === 浮动版权提示 ===
+    let noticeTimer;
+    function showFloatingNotice(x, y) {
+      let notice = document.getElementById('bioplus-copy-notice');
+      if (!notice) {
+        notice = document.createElement('div');
+        notice.id = 'bioplus-copy-notice';
+        notice.style.cssText = `
+          position: fixed;
+          padding: 8px 16px;
+          background: rgba(0, 0, 0, 0.8);
+          color: #fff;
+          border-radius: 4px;
+          font-size: 13px;
+          z-index: 10000;
+          pointer-events: none;
+          transition: opacity 0.3s;
+          opacity: 0;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        `;
+        document.body.appendChild(notice);
+      }
+
+      notice.textContent = '© BioPlus - 内容受版权保护';
+      notice.style.left = Math.min(x, window.innerWidth - 180) + 'px';
+      notice.style.top = Math.min(y, window.innerHeight - 40) + 'px';
+      notice.style.opacity = '1';
+
+      clearTimeout(noticeTimer);
+      noticeTimer = setTimeout(function() {
+        notice.style.opacity = '0';
+      }, 1500);
+    }
+
+    // === 图片保护 ===
+    function protectImages() {
+      const images = document.querySelectorAll('img:not([data-protected])');
+      images.forEach(function(img) {
+        img.setAttribute('data-protected', 'true');
+        img.setAttribute('draggable', 'false');
+        img.style.userSelect = 'none';
+        img.style.webkitUserSelect = 'none';
+
+        // 右键禁用
+        img.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+          return false;
+        });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', protectImages);
+    } else {
+      protectImages();
+    }
+
+    // 新图片加载时也保护
+    const observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(m) {
+        if (m.addedNodes.length) {
+          protectImages();
+        }
+      });
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    console.log('BioPlus: Content protection enabled');
+  })();
+  </script>
+
+  {# ===== 阅读进度条 ===== #}
+  <script>
+  (function() {
+    'use strict';
+
+    const bar = document.createElement('div');
+    bar.id = 'bioplus-progress-bar';
+    bar.style.cssText = `
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #009688, #4db6ac);
+      z-index: 10001;
+      transition: width 0.1s ease-out;
+      width: 0%;
+      box-shadow: 0 0 8px rgba(0, 150, 136, 0.5);
+    `;
+    document.body.appendChild(bar);
+
+    function updateProgress() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const percent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      bar.style.width = percent + '%';
+    }
+
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    window.addEventListener('resize', updateProgress);
+    updateProgress();
+  })();
+  </script>
+
+  {# ===== 分享功能 ===== #}
+  <script>
+  (function() {
+    'use strict';
+
+    function addShareButtons() {
+      // 在文章标题附近添加分享按钮
+      const titleEl = document.querySelector('h1');
+      if (!titleEl || titleEl.querySelector('.bioplus-share')) return;
+
+      const isZh = document.documentElement.lang === 'zh';
+      const shareBtn = document.createElement('div');
+      shareBtn.className = 'bioplus-share';
+      shareBtn.style.cssText = `
+        display: inline-flex;
+        gap: 8px;
+        margin-left: 12px;
+        vertical-align: middle;
+      `;
+
+      const title = encodeURIComponent(document.title);
+      const url = encodeURIComponent(window.location.href);
+
+      const platforms = [
+        { name: 'Twitter', icon: '𝕏', url: `https://twitter.com/intent/tweet?text=${title}&url=${url}` },
+        { name: 'LinkedIn', icon: 'in', url: `https://www.linkedin.com/sharing/share-offsite/?url=${url}` },
+        { name: 'Facebook', icon: 'f', url: `https://www.facebook.com/sharer/sharer.php?u=${url}` },
+        { name: 'Copy', icon: '🔗', url: '#', isCopy: true }
+      ];
+
+      platforms.forEach(function(p) {
+        const a = document.createElement('a');
+        a.href = p.url;
+        a.title = p.name;
+        a.target = p.isCopy ? '_self' : '_blank';
+        a.rel = 'noopener noreferrer';
+        a.style.cssText = `
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          background: var(--md-default-bg-color, #fff);
+          border: 1px solid var(--md-default-fg-color--lighter, #ddd);
+          color: var(--md-default-fg-color, #333);
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: bold;
+          transition: all 0.2s;
+        `;
+        a.textContent = p.icon;
+        a.addEventListener('mouseenter', function() {
+          this.style.background = 'var(--md-primary-fg-color, #009688)';
+          this.style.color = '#fff';
+          this.style.borderColor = 'var(--md-primary-fg-color, #009688)';
+        });
+        a.addEventListener('mouseleave', function() {
+          this.style.background = 'var(--md-default-bg-color, #fff)';
+          this.style.color = 'var(--md-default-fg-color, #333)';
+          this.style.borderColor = 'var(--md-default-fg-color--lighter, #ddd)';
+        });
+
+        if (p.isCopy) {
+          a.addEventListener('click', function(e) {
+            e.preventDefault();
+            navigator.clipboard.writeText(window.location.href).then(function() {
+              const original = a.textContent;
+              a.textContent = '✓';
+              setTimeout(function() { a.textContent = original; }, 1500);
+            });
+          });
+        }
+
+        shareBtn.appendChild(a);
+      });
+
+      titleEl.style.display = 'inline-block';
+      titleEl.parentNode.insertBefore(shareBtn, titleEl.nextSibling);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', addShareButtons);
+    } else {
+      addShareButtons();
+    }
+
+    // 支持 SPA 导航
+    if (typeof document$ !== 'undefined') {
+      document$.subscribe(function() {
+        setTimeout(addShareButtons, 100);
+      });
+    }
+  })();
+  </script>
+
+  {# ===== Google Analytics 增强追踪 ===== #}
+  {% set analytics = config.extra.get('analytics', {}) %}
+  {% set ga_id = analytics.get('property', '') %}
+  {% if ga_id and ga_id != 'G-XXXXXXXXXX' and 'REPLACE' not in ga_id %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ ga_id }}', {
+      'anonymize_ip': true,
+      'page_title': document.title,
+      'page_path': window.location.pathname
+    });
+
+    // 自定义事件追踪
+    function trackEvent(category, action, label, value) {
+      gtag('event', action, {
+        'event_category': category,
+        'event_label': label || '',
+        'value': value || 0
+      });
+    }
+
+    // 追踪搜索
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.querySelector('.md-search__input');
+      if (searchInput) {
+        let searchTimer;
+        searchInput.addEventListener('input', function() {
+          clearTimeout(searchTimer);
+          const val = this.value;
+          if (val.length >= 2) {
+            searchTimer = setTimeout(function() {
+              trackEvent('Search', 'search_query', val);
+            }, 1000);
+          }
+        });
+      }
+
+      // 追踪出站链接
+      document.querySelectorAll('a[href^="http"]:not([href*="' + window.location.hostname + '"])').forEach(function(a) {
+        a.addEventListener('click', function() {
+          trackEvent('Outbound', 'click', this.href);
+        });
+      });
+    });
+
+    window.BioPlusTrack = trackEvent;
+  </script>
   {% endif %}
 {% endblock %}

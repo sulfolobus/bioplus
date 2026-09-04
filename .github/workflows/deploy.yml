@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -15,7 +18,49 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # 构建检查（PR 和 push 都运行）
+  build-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build Chinese version (strict mode)
+        run: mkdocs build -f mkdocs.yml --strict
+
+      - name: Build English version (strict mode)
+        run: mkdocs build -f mkdocs-en.yml --strict
+
+      - name: Verify output
+        run: |
+          echo "=== Chinese site pages ==="
+          find site -name "*.html" | wc -l
+          echo "=== English site pages ==="
+          find site/en -name "*.html" | wc -l
+          echo "=== Check 404 page exists ==="
+          test -f site/404.html && echo "✓ 404.html exists" || echo "✗ 404.html missing"
+          echo "=== Check sitemap exists ==="
+          test -f site/sitemap.xml && echo "✓ sitemap.xml exists" || echo "✗ sitemap.xml missing"
+          test -f site/en/sitemap.xml && echo "✓ en/sitemap.xml exists" || echo "✗ en/sitemap.xml missing"
+          echo "=== Check robots.txt ==="
+          test -f site/robots.txt && echo "✓ robots.txt exists" || echo "✗ robots.txt missing"
+
+  # 部署（仅 main 分支 push）
   deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build-check
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -28,10 +73,13 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: requirements.txt
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material mkdocs-minify-plugin
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Build Chinese version
         run: |
