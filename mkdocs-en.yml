@@ -130,6 +130,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - About: about.md
+  - Recommended Books: recommended-books/index.md
   - Project Documentation: PROJECT_DOC.md
   - Project Guide: PROJECT_GUIDE.md
   - Research Areas:

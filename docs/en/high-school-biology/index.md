@@ -1,3 +1,10 @@
+---
+title: High School Biology - Textbook & Exam Preparation
+description: Complete high school biology learning resources covering all required and elective textbooks, with knowledge points, practice questions, and common mistakes for exam preparation.
+keywords: high school biology,biology exam,biology textbook,cell biology,genetics,ecology
+tags: [High School Biology, Learning Resources, Exam Prep]
+---
+
 # High School Biology
 
 This section is structured for beginners and exam-oriented learning.

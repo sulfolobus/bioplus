@@ -1,3 +1,10 @@
+---
+title: Gene Editing Applications - CRISPR Technology & Clinical Advances
+description: Latest advances in CRISPR gene editing applications, including gene therapy, genetic disease treatment, cancer therapy, gene delivery technologies, and ethical considerations.
+keywords: gene editing,CRISPR,gene therapy,genetic disease,cancer treatment,gene delivery,LNP,base editing
+tags: [Gene Editing, CRISPR, Gene Therapy, Biotechnology]
+---
+
 # Gene Editing Applications
 
 Gene editing technology has become one of the most revolutionary tools in life science. This section focuses on practical applications of gene editing in medicine and agriculture.

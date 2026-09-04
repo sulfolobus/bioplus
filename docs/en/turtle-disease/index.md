@@ -1,3 +1,10 @@
+---
+title: Turtle Disease Prevention & Treatment Guide
+description: Comprehensive guide to turtle disease prevention and treatment, covering bacterial, viral, fungal, and parasitic diseases, plus diagnosis and nutrition for turtle keepers.
+keywords: turtle disease,turtle health,shell rot,respiratory infection,parasites,pet turtle care,reptile health
+tags: [Turtle Disease, Pet Turtle, Reptile Care, Health]
+---
+
 # Turtle Disease Prevention and Treatment
 
 Turtles are widely beloved for their longevity, low maintenance, and ornamental value. However, turtle diseases are the main health issues affecting pet turtles and wild turtle populations.

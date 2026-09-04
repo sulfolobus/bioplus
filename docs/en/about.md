@@ -1,3 +1,9 @@
+---
+title: About Us
+description: Learn about the BioPlus team — researchers and science writers passionate about life sciences, dedicated to bringing cutting-edge life science knowledge to every learner.
+tags: [About, Team, Contact]
+---
+
 # About Us
 
 ## BioPlus Team

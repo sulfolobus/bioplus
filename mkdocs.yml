@@ -130,6 +130,7 @@ markdown_extensions:
 nav:
   - 首页: index.md
   - 关于我们: about.md
+  - 推荐书单: 推荐书单/index.md
   - 项目文档: PROJECT_DOC.md
   - 工作规范: PROJECT_GUIDE.md
   - 研究领域:

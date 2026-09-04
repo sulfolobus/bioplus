@@ -1,3 +1,11 @@
+---
+title: BioPlus - Life Science Practical Applications Platform
+description: BioPlus is a life science popular science platform covering gene editing, medical diagnostics, drug development, biotechnology, with learning resources for high school, olympiad, and higher education.
+keywords: life science,gene editing,CRISPR,medical diagnostics,drug discovery,high school biology,biology olympiad,synthetic biology
+tags: [Home, Life Science, Gene Editing, Medical Diagnostics]
+comments: false
+---
+
 # BioPlus - Life Science Practical Applications Platform
 
 ![BioPlus](assets/logo.svg)
@@ -22,7 +30,6 @@
   var el = document.getElementById("greeting");
   if (el) el.textContent = greeting;
 
-  // Update right-side TOC text as well
   var tocEls = document.querySelectorAll("a[href='#greeting-anchor'], a[href='#greeting-anchor'] span");
   tocEls.forEach(function(e) {
     e.textContent = greeting;
@@ -34,29 +41,137 @@
 
 BioPlus is a popular science platform dedicated to **practical applications of life sciences**. We strive to connect research problems, research teams, and research achievements, making life science knowledge accessible to everyone.
 
-## Our Mission
+Whether you're a high school student preparing for exams, a competition participant, a university learner, or simply a life science enthusiast — you'll find content tailored to your goals.
 
-- **Popularize Life Science Knowledge**: Help more people understand real-world applications of life sciences
-- **Bridge Research and Public**: Build a bridge between researchers and the public
-- **Promote Technology Transfer**: Showcase the latest research achievements and applications in life sciences
+## 🎯 Find What You Need
 
-## Core Content
+<div class="grid cards" markdown>
 
-### 🧬 Gene Editing Applications
-Explore the latest progress of CRISPR gene editing technology in clinical treatment and genetic disease therapy.
+-   **🎓 I'm a High School Student**
 
-### 🏥 Medical Diagnostics
-Learn about cutting-edge medical technologies such as liquid biopsy and AI-assisted diagnosis.
+    ---
 
-### 💊 Drug Development
-Follow innovative drug development fields including antibody drugs and AI-powered pharmaceuticals.
+    Textbook-aligned learning, key concepts, common mistakes, and practice questions
 
-### 🔬 Biotechnology
-Explore revolutionary biotechnology including synthetic biology and cell therapy.
+    [:material-arrow-right: Enter High School Biology](high-school-biology/index.md)
 
-## Learning Resources
+-   **🏆 I'm Preparing for Olympiad**
 
-Start here if you want a more focused path, whether you are building school foundations, preparing for competition training, or moving into university-level life sciences.
+    ---
+
+    Comprehensive subject review, competition thinking training, and advanced reading
+
+    [:material-arrow-right: Enter Olympiad Section](biology-competition/index.md)
+
+-   **📚 I Want Systematic Learning**
+
+    ---
+
+    University-level life science core curriculum, from macro to micro
+
+    [:material-arrow-right: Enter Higher Education](higher-education-life-sciences/index.md)
+
+-   **🐢 I Keep Turtles**
+
+    ---
+
+    Common turtle disease diagnosis, treatment guides, and nutrition advice
+
+    [:material-arrow-right: Turtle Disease Guide](turtle-disease/index.md)
+
+-   **🧬 I Follow Frontier Tech**
+
+    ---
+
+    Latest advances in gene editing, diagnostics, drug development, synthetic biology
+
+    [:material-arrow-right: Explore Research](gene-editing/index.md)
+
+-   **📖 I Enjoy Popular Science**
+
+    ---
+
+    Accessible life science articles that make complex concepts easy to understand
+
+    [:material-arrow-right: Read Popular Science](popular-science/index.md)
+
+</div>
+
+## Research Areas
+
+Explore the cutting-edge applications of life sciences and see how technology is changing the world.
+
+<div class="grid cards" markdown>
+
+-   :material-dna: **Gene Editing**
+
+    ---
+
+    CRISPR principles & clinical applications, gene therapy, genetic & cancer treatment, delivery technologies
+
+    [:material-arrow-right: Learn more](gene-editing/index.md)
+
+-   :material-hospital: **Medical Diagnosis**
+
+    ---
+
+    Liquid biopsy, ctDNA detection, AI-assisted diagnosis, medical imaging AI, PCR & genetic testing
+
+    [:material-arrow-right: Learn more](medical-diagnosis/index.md)
+
+-   :pill: **Drug Development**
+
+    ---
+
+    Antibody drug principles & development, AI pharmaceuticals, small molecule discovery
+
+    [:material-arrow-right: Learn more](drug-development/index.md)
+
+-   :material-flask: **Biotechnology**
+
+    ---
+
+    Synthetic biology, cell therapy, bioinformatics applications
+
+    [:material-arrow-right: Learn more](biotechnology/index.md)
+
+-   :material-brain: **Neurodegenerative Diseases**
+
+    ---
+
+    Latest research on Alzheimer's, Parkinson's, and Huntington's disease
+
+    [:material-arrow-right: Learn more](neurodegenerative-diseases/index.md)
+
+-   :heart: **Cardiovascular Diseases**
+
+    ---
+
+    Hypertension, coronary heart disease, heart failure treatment research
+
+    [:material-arrow-right: Learn more](cardiovascular-diseases/index.md)
+
+-   :eye: **Sensory Dysfunction**
+
+    ---
+
+    Blindness treatment, brain-machine interface, cochlear implants, hearing loss treatment
+
+    [:material-arrow-right: Learn more](sensory-dysfunction/index.md)
+
+-   :material-yin-yang: **Traditional Chinese Medicine**
+
+    ---
+
+    Huangdi Neijing, Shanghan Lun, Jingui Yaolue, Bencao Gangmu, health preservation wisdom
+
+    [:material-arrow-right: Learn more](traditional-chinese-medicine/index.md)
+
+</div>
+
+## 📚 Learning Resources
+
+Three learning paths from beginner to advanced — choose based on your goals.
 
 <div class="grid cards" markdown>
 
@@ -64,49 +179,99 @@ Start here if you want a more focused path, whether you are building school foun
 
     ---
 
-    A structured overview of core concepts and common problem types for high school biology study.
+    **6 Textbooks · 30+ Chapters · Complete Exam Coverage**
 
-    [:material-arrow-right: Enter topic](high-school-biology/index.md)
+    Required and elective textbooks, each with knowledge points, practice questions, and common mistakes.
+
+    [:material-arrow-right: Start Learning](high-school-biology/index.md)
 
 -   :material-trophy: **Biology Olympiad**
 
     ---
 
-    Topic-based review, thinking exercises, and advanced reading for systematic competition preparation.
+    **9 Subjects · Full Olympiad Coverage**
 
-    [:material-arrow-right: Enter topic](biology-competition/index.md)
+    Cell biology, molecular genetics, biochemistry, animal/plant physiology, ecology, evolution & more.
+
+    [:material-arrow-right: Start Preparing](biology-competition/index.md)
 
 -   :material-book-open-page-variant: **Life Sciences in Higher Education**
 
     ---
 
-    A macro-to-micro university-level path with core subject maps, key topics, and public textbook/course links.
+    **16 Core Courses · Macro to Micro**
 
-    [:material-arrow-right: Enter topic](higher-education-life-sciences/index.md)
+    Intro to life sciences, evolution, ecology, physiology, cell biology, molecular biology, biochemistry, and more.
+
+    [:material-arrow-right: Learn Systematically](higher-education-life-sciences/index.md)
 
 </div>
 
-### 🧠 Neurodegenerative Diseases
-Research progress on Alzheimer's disease, amnesia, and other neurodegenerative conditions.
+## 🌟 Featured Sections
 
-### ❤️ Cardiovascular Diseases
-Advances in hypertension treatment, including both Western and traditional Chinese medicine approaches.
+<div class="grid cards" markdown>
 
-### 👁 Sensory Dysfunction
-Solutions for blindness treatment and brain-machine interface technology.
+-   :material-newspaper: **Nature Digest**
 
-## Featured Sections
+    ---
 
-| Section | Description |
+    Daily Nature paper highlights with bilingual commentary — stay at the frontier.
+
+    [:material-arrow-right: View Latest](chinese-classics/classics-study/index.md)
+
+-   :material-book-open-variant: **Chinese Classics Study**
+
+    ---
+
+    Daily issues of meridian study + Dao De Jing + classic readings for systematic learning.
+
+    [:material-arrow-right: Start Studying](chinese-classics/index.md)
+
+-   :material-group: **Research Groups**
+
+    ---
+
+    Introduction to leading life science research groups worldwide — discover frontier directions & PIs.
+
+    [:material-arrow-right: Explore Groups](research-groups/index.md)
+
+-   :material-rocket-launch: **Achievements**
+
+    ---
+
+    Showcasing translation from lab bench to clinic — following life science industrialization.
+
+    [:material-arrow-right: View Achievements](achievements/index.md)
+
+</div>
+
+## 🔔 Subscribe for Updates
+
+Never miss content. Subscribe in your preferred way:
+
+- **[RSS Feed](https://sulfolobus.github.io/bioplus/en/feed_rss_created.xml)** — Get new articles in your favorite RSS reader
+- **WeChat Official Account** — Search "BioPlus" for weekly highlights
+- **GitHub Stars** — [Star our repo](https://github.com/sulfolobus/bioplus) to get updates first
+
+## 💡 Why BioPlus
+
+| Feature | Description |
 |---------|-------------|
-| **Research Teams** | Introduction to world-leading life science research teams |
-| **Achievements** | Showcase of technology transfer from lab to clinic |
-| **Popular Articles** | In-depth popular science articles on life sciences |
+| **Structured Content** | A clear learning path from high school to university, from popular science to frontier |
+| **Bilingual Reading** | Chinese & English updated together — improve both knowledge and English |
+| **Practice-Oriented** | Not just theory — focus on how technology applies to the real world |
+| **Continuously Updated** | Daily Nature digests, continuously expanding learning resources |
+| **Open Source** | All content is open source — contributions and feedback welcome |
 
-## Join Us
+## 🤝 Join Us
 
-Follow us for the latest life science updates!
+We believe knowledge should be seen by more people. If you love life sciences, we welcome your participation:
 
-- 📧 Contact: contact@bioplus.com
-- 📱 WeChat: BioPlus
-- 🐙 GitHub: BioPlus
+- **📝 Contribute** — Share your study notes or popular science articles
+- **💬 Discuss** — Join the conversation in the comments section below each page
+- **🐙 Contribute Code** — PRs welcome at [our GitHub repo](https://github.com/sulfolobus/bioplus)
+- **📧 Contact** — contact@bioplus.com
+
+---
+
+*Explore the mysteries of life — start here.*
